@@ -1,12 +1,12 @@
 /* Libraries */
 import React from "react";
 
-function CTA({ variant = "base", handleModal }) {
+function CTA({ variant = "base", handleModalOpen }) {
   return (
     <>
       <div
         className={"cta-container cta-container-" + variant}
-        onClick={() => handleModal()}
+        onClick={() => handleModalOpen()}
       >
         Contact
       </div>

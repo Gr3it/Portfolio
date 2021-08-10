@@ -10,19 +10,45 @@ import PassionCard from "Components/PassionCard";
 import CTASection from "Components/CTASection";
 import Footer from "Components/Footer";
 import Contact from "Components/Contact";
+import ViewProject from "Components/ViewProject";
 
 function Homepage() {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const handleModal = () => {
+  window.addEventListener("scroll", () => {
+    document.documentElement.style.setProperty(
+      "--scroll-y",
+      `${window.scrollY}px`
+    );
+  });
+
+  const handleModalOpen = () => {
     setModalOpen(!modalOpen);
-    document.querySelector(".App").classList.toggle("blur");
+    document.querySelector(".App").classList.add("blur");
+
+    const scrollY =
+      document.documentElement.style.getPropertyValue("--scroll-y");
+    const body = document.body;
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}`;
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(!modalOpen);
+
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = "";
+    body.style.top = "";
+    window.scrollTo(0, parseInt(scrollY || "0") * -1);
+
+    document.querySelector(".App").classList.remove("blur");
   };
 
   return (
-    <>
+    <div className="section-wrapper">
       {/* Menu */}
-      <Menu handleModal={() => handleModal()}></Menu>
+      <Menu></Menu>
 
       {/* Content */}
       <div className="flex-center">
@@ -38,7 +64,8 @@ function Homepage() {
                 Zini
               </div>
               <div className="home-cta">
-                <CTA variant="base" handleModal={() => handleModal()} />
+                <CTA variant="base" handleModalOpen={() => handleModalOpen()} />
+                <ViewProject />
               </div>
             </div>
             <div className="home-SVG">
@@ -599,14 +626,14 @@ function Homepage() {
           </section>
         </div>
         <section className="cta-section" id="cta-section">
-          <CTASection handleModal={() => handleModal()} />
+          <CTASection handleModalOpen={() => handleModalOpen()} />
         </section>
         <section className="footer" id="footer">
           <Footer />
         </section>
       </div>
-      <Contact open={modalOpen} handleModal={() => handleModal()} />
-    </>
+      <Contact open={modalOpen} handleModalClose={() => handleModalClose()} />
+    </div>
   );
 }
 

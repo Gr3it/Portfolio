@@ -1,11 +1,20 @@
 /* Libraries */
 import React from "react";
 
-function MenuElement({ title = "", target = "" }) {
+function MenuElement({ title = "", target = "", selected = false }) {
   return (
     <>
-      <div className="menu-nav-elements">
-        <a href={"#" + target}>{title}</a>
+      <div className={"menu-nav-elements"}>
+        <a
+          href={"#" + target}
+          className={
+            selected
+              ? "menu-nav-elements-text-selected"
+              : "menu-nav-elements-text"
+          }
+        >
+          {title}
+        </a>
         <svg
           className="SVG-Tratto"
           xmlns="http://www.w3.org/2000/svg"

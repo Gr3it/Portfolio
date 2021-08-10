@@ -2,10 +2,9 @@
 import React from "react";
 
 /* Component/Pages */
-import CTA from "./CTA";
 import MenuElement from "./MenuElement";
 
-function Menu({ handleModal }) {
+function Menu() {
   const menu_data = [
     { title: "My Project", target: "project" },
     { title: "My Experiments", target: "experiments" },
@@ -25,7 +24,7 @@ function Menu({ handleModal }) {
               id="Background"
               width="100"
               height="100"
-              rx="10"
+              rx="6"
               fill="#0d6ede"
             />
             <g id="Text">
@@ -41,7 +40,7 @@ function Menu({ handleModal }) {
               />
             </g>
           </svg>
-
+          <MenuElement key="home" title="Home" selected />
           {menu_data.map((element) => (
             <MenuElement
               key={element.title}
@@ -49,9 +48,6 @@ function Menu({ handleModal }) {
               target={element.target}
             />
           ))}
-          <div className="menu-cta-container">
-            <CTA variant="blue" handleModal={() => handleModal()} />
-          </div>
         </div>
       </div>
     </>

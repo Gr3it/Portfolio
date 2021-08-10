@@ -3,7 +3,7 @@ import React from "react";
 import CTA from "./CTA";
 import ResumeButton from "./ResumeButton";
 
-function CTASection({ handleModal }) {
+function CTASection({ handleModalOpen }) {
   return (
     <>
       <svg
@@ -17,11 +17,13 @@ function CTASection({ handleModal }) {
           fill="#0d6ede"
         />
       </svg>
-      <div className="cta-section-container">
-        <div className="cta-section-title">Want to get in touch with me?</div>
-        <div className="cta-section-buttons">
-          <CTA variant="white" handleModal={() => handleModal()} />
-          <ResumeButton />
+      <div className="cta-section-bcg">
+        <div className="container-width cta-section-container">
+          <div className="cta-section-title">Want to get in touch with me?</div>
+          <div className="cta-section-buttons">
+            <CTA variant="white" handleModalOpen={() => handleModalOpen()} />
+            <ResumeButton />
+          </div>
         </div>
       </div>
     </>
