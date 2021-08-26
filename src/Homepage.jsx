@@ -55,6 +55,7 @@ function Homepage() {
         <div className="container-width">
           {/* Home */}
           <section className="home" id="home">
+            <div className="watermark home-watermark">PARTNER</div>
             <div className="home-left-column">
               <div className="home-subtitle">
                 Web Developer & UI/UX Designer
@@ -284,6 +285,7 @@ function Homepage() {
             </div>
           </section>
           <section className="project" id="project">
+            <div className="watermark project-watermark">EXPERIENCE</div>
             <div className="section-title">
               <h2>My Project</h2>
               <svg
@@ -328,6 +330,7 @@ function Homepage() {
             </div>
           </section>
           <section className="experiments" id="experiments">
+            <div className="watermark experiments-watermark">REVOLUTIONAL</div>
             <div className="section-title">
               <h2>My Experiments</h2>
               <svg
@@ -367,6 +370,7 @@ function Homepage() {
             </div>
           </section>
           <section className="about" id="about">
+            <div className="watermark about-watermark">PASSIONATE</div>
             <div className="section-title">
               <h2>About Me</h2>
               <svg
@@ -598,7 +602,11 @@ function Homepage() {
                   </svg>
                 </div>
               </div>
-              <div className="about-passion-title">Passion</div>
+              <div className="about-passion-title">
+                <div className="watermark passion-watermark">CREATIVE</div>
+                Passion
+              </div>
+
               <div className="about-passion-contaioner">
                 <PassionCard
                   title="Design"

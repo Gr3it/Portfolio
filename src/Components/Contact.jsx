@@ -30,22 +30,45 @@ function Contact({ open = false, handleModalClose }) {
   }
 
   const handleSubmit = (e) => {
-    console.log(e.target.value);
+    e.stopPropagation();
+    e.preventDefault();
+    if (captcha) {
+      sendEmail(e);
+    } else {
+      document
+        .getElementById("contact-captcha")
+        .style.removeProperty("animation");
+      setTimeout(() => {
+        document.getElementById("contact-captcha").style.animation =
+          "shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both";
+      }, 10);
+    }
   };
-
-  console.log(captcha);
 
   return open
     ? ReactDOM.createPortal(
         <div className="contact-backdrop" onClick={() => handleModalClose()}>
           <form
-            onSubmit={() => handleSubmit()}
+            onSubmit={(e) => handleSubmit(e)}
             className="contact-content"
             onClick={(e) => {
               e.stopPropagation();
             }}
           >
-            <div className="contact-title">Let's Talk!</div>
+            <div className="contact-title">
+              Let's Talk!
+              <svg
+                className="contact-close"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 352 512"
+                onClick={() => handleModalClose()}
+              >
+                <path
+                  fill="currentColor"
+                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                ></path>
+              </svg>
+            </div>
             <div className="contact-field">
               Name:
               <input
@@ -57,11 +80,21 @@ function Contact({ open = false, handleModalClose }) {
             </div>
             <div className="contact-field">
               Email:
-              <input className="contact-input" type="email" name="email" />
+              <input
+                className="contact-input"
+                type="email"
+                name="email"
+                required
+              />
             </div>
             <div className="contact-field">
               Subject:
-              <input className="contact-input" type="text" name="subject" />
+              <input
+                className="contact-input"
+                type="text"
+                name="subject"
+                required
+              />
             </div>
             <div className="contact-field">
               Message:
@@ -70,9 +103,10 @@ function Contact({ open = false, handleModalClose }) {
                 rows={2}
                 name="message"
                 style={{ resize: "none" }}
+                required
               />
             </div>
-            <div className="contact-captcha">
+            <div id="contact-captcha" className="contact-captcha">
               <ReCAPTCHA
                 sitekey={sitekey}
                 onChange={() => setCaptcha(true)}

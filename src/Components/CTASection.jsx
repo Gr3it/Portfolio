@@ -19,6 +19,7 @@ function CTASection({ handleModalOpen }) {
       </svg>
       <div className="cta-section-bcg">
         <div className="container-width cta-section-container">
+          <div className="watermark cta-watermark">GET IN TOUCH</div>
           <div className="cta-section-title">Want to get in touch with me?</div>
           <div className="cta-section-buttons">
             <CTA variant="white" handleModalOpen={() => handleModalOpen()} />

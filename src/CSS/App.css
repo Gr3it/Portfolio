@@ -6,12 +6,15 @@
   --Black: #171717;
   --Black60: #17171799;
   --Black45: #17171773;
+  --Black5: #1717170d;
   --White: #ffffff;
   --White60: #ffffff99;
+  --White5: #ffffff1a;
   --Secondary: #0d6ede;
   --ImgBackgorund: #94d4f0;
   --Grey: #707070;
   --Grey45: #70707073;
+  --Red: #e10052;
 
   /* Project Colors*/
   --FlynetSecondary: #bf2431;
@@ -182,6 +185,38 @@ body {
 .home-SVG > * {
   width: 40rem;
   margin-left: -10rem;
+}
+
+.watermark {
+  margin-top: -5rem;
+  font-size: 18.75rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 700;
+  z-index: -1;
+  color: var(--Black5);
+}
+
+.home-watermark {
+  margin: 0;
+  transform: translate(-30%);
+}
+
+.project-watermark {
+  transform: translate(-60%);
+}
+
+.passion-watermark {
+  margin-top: -15rem;
+  transform: translate(-60%);
+}
+
+.cta-watermark {
+  color: var(--White5);
+  z-index: -1;
+  white-space: nowrap;
+  user-select: none;
 }
 
 .project {
@@ -416,7 +451,8 @@ body {
   transition: background 100ms;
 }
 
-.experiments {
+.experiments,
+.about {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -526,9 +562,11 @@ body {
   background-color: var(--Secondary);
   display: flex;
   justify-content: center;
+  z-index: -2;
 }
 
 .cta-section-container {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -595,7 +633,44 @@ body {
 }
 
 .view-project-button-svg {
+  transform: translateY(10%);
   width: 1.5rem;
+  animation: up-down 1.5s ease-in-out infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(15%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(15%);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate(-1px);
+  }
+
+  20%,
+  80% {
+    transform: translate(3px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate(-6px);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 .footer {
@@ -684,9 +759,14 @@ body {
 }
 
 .contact-title {
+  position: relative;
   font-size: 3.25rem;
   font-weight: 600;
   align-self: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-captcha {
@@ -721,6 +801,29 @@ body {
   border-radius: 5rem;
   border: 0.31rem solid var(--Secondary);
   background-color: transparent;
+  cursor: pointer;
+}
+
+.contact-close {
+  align-self: center;
+  right: 1rem;
+  position: absolute;
+  width: 1.5rem;
+  transition: all 100ms ease-out;
+}
+
+.contact-close > * {
+  color: var(--Black60);
+}
+
+.contact-close:hover > * {
+  color: var(--Red);
+}
+
+.contact-close:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  color: var(--Secondary);
 }
 
 .blur {
@@ -750,9 +853,10 @@ body {
   scroll-snap-type: y proximity;
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  /*  scroll-behavior: smooth; */
 }
 
 section {
   scroll-snap-align: start;
+  position: relative;
 }
