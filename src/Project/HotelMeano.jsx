@@ -5,14 +5,19 @@ import React from "react";
 import ProjectMenu from "../Components/ProjectMenu";
 import Footer from "../Components/Footer";
 
-function Flynet({ color }) {
+function Hotel_Meano({ color }) {
   return (
     <div className="flex-columns align-center">
-      <ProjectMenu github="https://github.com/Gr3it/Servlet-Flynet" repo />
+      <ProjectMenu
+        github="https://github.com/Gr3it/School-Elaborate"
+        link="https://hotelmeano.altervista.org/"
+        repo
+        hosted
+      />
       <div className="project-home container-large">
-        <h2 className="home-subtitle">Flynet</h2>
+        <h2 className="home-subtitle">Hotel Meano</h2>
         <h1 className="project-title">
-          Cagliari airport website, flights infos and manage panel
+          Hotel Meano site, presentation of the hotel and booking
         </h1>
       </div>
       <div
@@ -22,7 +27,7 @@ function Flynet({ color }) {
         <div className="container-large">
           <img
             className="width100"
-            src={process.env.PUBLIC_URL + "/Assets/Flynet/Home.jpg"}
+            src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Home.jpg"}
             alt="Site Homepage"
           />
         </div>
@@ -49,28 +54,28 @@ function Flynet({ color }) {
       >
         <div className="grid-image-container">
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Flynet/Home.jpg"}
-            alt="Home"
+            src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Contact.png"}
+            alt="Contact"
           />
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Flynet/Arrivals.jpg"}
-            alt="Arrivals"
+            src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Proposals.jpg"}
+            alt="Proposals"
           />
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Flynet/Login.jpg"}
-            alt="Login"
+            src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Activities.jpg"}
+            alt="Activities"
           />
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Flynet/Maps.jpg"}
-            alt="Maps"
+            src={process.env.PUBLIC_URL + "/Assets/HotelMeano/PhotoGallery.jpg"}
+            alt="PhotoGallery"
           />
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Flynet/Search.jpg"}
-            alt="Search"
+            src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Prices.jpg"}
+            alt="Prices"
           />
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Flynet/Admin.jpg"}
-            alt="Admin"
+            src={process.env.PUBLIC_URL + "/Assets/HotelMeano/About.jpg"}
+            alt="About"
           />
         </div>
       </div>
@@ -90,17 +95,10 @@ function Flynet({ color }) {
           </p>
         </div>
         <div className="project-row">
-          <div
-            className="project-row-image-dual"
-            style={{ backgroundColor: color }}
-          >
+          <div className="project-row-image" style={{ backgroundColor: color }}>
             <img
-              src={process.env.PUBLIC_URL + "/Assets/Flynet/Arrivals.jpg"}
-              alt="Arrivals Page"
-            />
-            <img
-              src={process.env.PUBLIC_URL + "/Assets/Flynet/Departures.jpg"}
-              alt="Departures Page"
+              src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Page1.jpg"}
+              alt="Date Selection"
             />
           </div>
           <p className="width50 paragraph-justify">
@@ -113,8 +111,8 @@ function Flynet({ color }) {
         <div className="project-row">
           <div className="project-row-image" style={{ backgroundColor: color }}>
             <img
-              src={process.env.PUBLIC_URL + "/Assets/Flynet/Search.jpg"}
-              alt="Search Page"
+              src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Page2.jpg"}
+              alt="Room Selection"
             />
           </div>
           <p className="width50 paragraph-justify">
@@ -127,8 +125,22 @@ function Flynet({ color }) {
         <div className="project-row">
           <div className="project-row-image" style={{ backgroundColor: color }}>
             <img
-              src={process.env.PUBLIC_URL + "/Assets/Flynet/Admin.jpg"}
-              alt="Admin Page"
+              src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Page3.jpg"}
+              alt="Personal Data Registration"
+            />
+          </div>
+          <p className="width50 paragraph-justify">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita
+          </p>
+        </div>
+        <div className="project-row">
+          <div className="project-row-image" style={{ backgroundColor: color }}>
+            <img
+              src={process.env.PUBLIC_URL + "/Assets/HotelMeano/Page4.jpg"}
+              alt="Receipt Page"
             />
           </div>
           <p className="width50 paragraph-justify">
@@ -144,4 +156,4 @@ function Flynet({ color }) {
   );
 }
 
-export default Flynet;
+export default Hotel_Meano;

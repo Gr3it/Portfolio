@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import ReCAPTCHA from "react-google-recaptcha";
-import { sitekey } from "../reCaptcha";
 
 function Contact({ open = false, handleModalClose }) {
   const [captcha, setCaptcha] = useState(false);
@@ -11,21 +10,13 @@ function Contact({ open = false, handleModalClose }) {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "Portfolio_template",
-        e.target,
-        "user_9JGriSyHcw9jMnMNVQZWF"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      "gmail",
+      "Portfolio_template",
+      e.target,
+      process.env.REACT_APP_EMAILJS_ID
+    );
+
     e.target.reset();
   }
 
@@ -56,7 +47,7 @@ function Contact({ open = false, handleModalClose }) {
             }}
           >
             <div className="contact-title">
-              Let's Talk!
+              <h1 className="passion-title">Let's Talk!</h1>
               <svg
                 className="contact-close"
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +61,7 @@ function Contact({ open = false, handleModalClose }) {
               </svg>
             </div>
             <div className="contact-field">
-              Name:
+              <h2 className="contact-text">Name:</h2>
               <input
                 className="contact-input"
                 type="text"
@@ -79,7 +70,7 @@ function Contact({ open = false, handleModalClose }) {
               />
             </div>
             <div className="contact-field">
-              Email:
+              <h2 className="contact-text">Email:</h2>
               <input
                 className="contact-input"
                 type="email"
@@ -88,7 +79,7 @@ function Contact({ open = false, handleModalClose }) {
               />
             </div>
             <div className="contact-field">
-              Subject:
+              <h2 className="contact-text">Subject:</h2>
               <input
                 className="contact-input"
                 type="text"
@@ -97,7 +88,7 @@ function Contact({ open = false, handleModalClose }) {
               />
             </div>
             <div className="contact-field">
-              Message:
+              <h2 className="contact-text">Message:</h2>
               <textarea
                 className="contact-input"
                 rows={2}
@@ -108,14 +99,14 @@ function Contact({ open = false, handleModalClose }) {
             </div>
             <div id="contact-captcha" className="contact-captcha">
               <ReCAPTCHA
-                sitekey={sitekey}
+                sitekey={process.env.REACT_APP_SITE_KEY}
                 onChange={() => setCaptcha(true)}
                 onExpired={() => setCaptcha(false)}
               />
             </div>
             <input
               type="submit"
-              className="contact-send"
+              className="contact-send "
               value="Send Message"
             />
           </form>

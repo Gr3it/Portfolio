@@ -9,20 +9,22 @@ import "./CSS/App.css";
 import Homepage from "./Homepage";
 import Page_Not_Found from "./Page_Not_Found";
 import Flynet from "./Project/Flynet";
-import Hotel_Meano from "./Project/Hotel_Meano";
+import HotelMeano from "./Project/HotelMeano";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Homepage} />
-          <Route path="/hotel-meano" exact component={Hotel_Meano} />
-          <Route path="/flynet" exact component={Flynet} />
-          <Route path="/" component={Page_Not_Found} />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Homepage} />
+        <Route
+          path="/hotel-meano"
+          exact
+          render={() => <HotelMeano color="#fd871f" />}
+        />
+        <Route path="/flynet" exact render={() => <Flynet color="#bf2431" />} />
+        <Route path="/" component={Page_Not_Found} />
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,11 +1,13 @@
 /* Libraries */
 import React from "react";
+
+/* Component/Pages */
 import CTA from "./CTA";
 import ResumeButton from "./ResumeButton";
 
 function CTASection({ handleModalOpen }) {
   return (
-    <>
+    <section className="flex-columns" id="cta-section">
       <svg
         className="cta-section-svg "
         xmlns="http://www.w3.org/2000/svg"
@@ -18,16 +20,18 @@ function CTASection({ handleModalOpen }) {
         />
       </svg>
       <div className="cta-section-bcg">
-        <div className="container-width cta-section-container">
-          <div className="watermark cta-watermark">GET IN TOUCH</div>
-          <div className="cta-section-title">Want to get in touch with me?</div>
+        <div className="container-large flex-columns align-center cta-section-container">
+          <h6 className="watermark-text watermark cta-watermark">
+            GET IN TOUCH
+          </h6>
+          <h1 className="cta-section-title">Interested to work with me?</h1>
           <div className="cta-section-buttons">
             <CTA variant="white" handleModalOpen={() => handleModalOpen()} />
             <ResumeButton />
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 
