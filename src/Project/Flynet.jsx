@@ -28,7 +28,7 @@ function Flynet({ color }) {
         </div>
       </div>
       <div className="flex-columns container-large">
-        <div className="project-description container-large">
+        <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -75,7 +75,7 @@ function Flynet({ color }) {
         </div>
       </div>
       <div className="flex-columns container-large">
-        <div className="project-description container-large">
+        <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

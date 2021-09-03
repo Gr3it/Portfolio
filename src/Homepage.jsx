@@ -52,7 +52,7 @@ function Homepage() {
   return (
     <div className="flex-columns align-center">
       {/* Menu */}
-      <Menu></Menu>
+      <Menu handleModalOpen={() => handleModalOpen()}></Menu>
 
       {/* Home */}
       <section className="home container-large" id="home">
@@ -69,12 +69,7 @@ function Homepage() {
           </div>
         </div>
         <div className="home-SVG">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="607.061"
-            height="372.5"
-            viewBox="0 0 607.061 372.5"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 607.061 372.5">
             <g id="SVG" transform="translate(-2012 -505.105)">
               <path
                 id="Tracciato_27"

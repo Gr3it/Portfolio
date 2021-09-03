@@ -38,7 +38,13 @@ function Contact({ open = false, handleModalClose }) {
 
   return open
     ? ReactDOM.createPortal(
-        <div className="contact-backdrop" onClick={() => handleModalClose()}>
+        <div
+          className="contact-backdrop"
+          onClick={() => {
+            handleModalClose();
+            setCaptcha(false);
+          }}
+        >
           <form
             onSubmit={(e) => handleSubmit(e)}
             className="contact-content"

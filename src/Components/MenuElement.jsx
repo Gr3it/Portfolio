@@ -1,9 +1,19 @@
 /* Libraries */
 import React from "react";
 
-function MenuElement({ title = "", target = "", selected = false }) {
+function MenuElement({
+  title = "",
+  target = "",
+  selected = false,
+  handleMenuClose = () => {},
+  hamburger = false,
+}) {
   return (
-    <a href={"#" + target} className="menu-nav-elements">
+    <a
+      href={"#" + target}
+      className="menu-nav-elements"
+      onClick={hamburger ? () => handleMenuClose() : () => {}}
+    >
       <h1 className={(selected ? "color-blue " : "") + "menu-title"}>
         {title}
       </h1>

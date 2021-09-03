@@ -1,16 +1,25 @@
 /* Libraries */
-import React from "react";
+import React, { useState } from "react";
 
 /* Component/Pages */
 import MenuElement from "./MenuElement";
+import CTA from "./CTA";
 
-function Menu() {
+function Menu({ handleModalOpen }) {
   /* Title element array */
   const menu_data = [
     { title: "My Project", target: "project" },
     { title: "My Experiments", target: "experiments" },
     { title: "About Me", target: "about" },
   ];
+
+  const handleMenuClose = () => {
+    setHamburgerActive(false);
+    document.getElementById("root").style.overflowY = "scroll";
+    document.body.style.position = "";
+  };
+
+  const [hamburgerActive, setHamburgerActive] = useState(false);
 
   return (
     <header className="menu-background flex-center">
@@ -40,6 +49,59 @@ function Menu() {
             target={element.target}
           />
         ))}
+        {hamburgerActive ? (
+          <div onClick={() => handleMenuClose()}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+              className="menu-hamburger menu-hamburger-close"
+            >
+              <path
+                fill="currentColor"
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </div>
+        ) : (
+          <div
+            onClick={() => {
+              setHamburgerActive(true);
+              document.getElementById("root").style.overflowY = "hidden";
+              document.body.style.position = "fixed";
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="menu-hamburger"
+            >
+              <path
+                fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              ></path>
+            </svg>
+          </div>
+        )}
+      </div>
+      <div
+        className={
+          (hamburgerActive ? "menu-hamburger-active " : "") +
+          "menu-hamburger-container container-large"
+        }
+      >
+        <MenuElement key="home" title="Home" selected />
+        {menu_data.map((element) => (
+          <MenuElement
+            key={element.title}
+            title={element.title}
+            target={element.target}
+            handleMenuClose={() => handleMenuClose()}
+            hamburger
+          />
+        ))}
+        <div className="menu-hamburger-contact">
+          <CTA variant="blue" handleModalOpen={() => handleModalOpen()} />
+        </div>
       </div>
     </header>
   );
