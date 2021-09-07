@@ -16,7 +16,21 @@ const HotelMeano = React.lazy(() => import("./Project/HotelMeano"));
 
 function App() {
   return (
-    <React.Suspense fallback={<span>Loading...</span>}>
+    <React.Suspense
+      fallback={
+        <div className="container">
+          <div className="animation-container">
+            <div className="loading-text">Loading</div>
+            <div className="loading-dot dot-1"></div>
+            <div className="loading-dot dot-2"></div>
+            <div className="loading-dot dot-3"></div>
+            <div className="loading-dot dot-4"></div>
+            <div className="loading-dot dot-5"></div>
+            <div className="loading-dot dot-6"></div>
+          </div>
+        </div>
+      }
+    >
       <Router>
         <ScrollToTop />
         <Switch>
