@@ -7,27 +7,34 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./CSS/App.css";
 
 /* Component/Pages */
-import Homepage from "./Homepage";
-import Page_Not_Found from "./Page_Not_Found";
-import Flynet from "./Project/Flynet";
-import HotelMeano from "./Project/HotelMeano";
 import ScrollToTop from "./Components/scrollToTop";
+
+const Homepage = React.lazy(() => import("./Homepage"));
+const Page_Not_Found = React.lazy(() => import("./Page_Not_Found"));
+const Flynet = React.lazy(() => import("./Project/Flynet"));
+const HotelMeano = React.lazy(() => import("./Project/HotelMeano"));
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Switch>
-        <Route path="/" exact component={Homepage} />
-        <Route
-          path="/hotel-meano"
-          exact
-          render={() => <HotelMeano color="#fd871f" />}
-        />
-        <Route path="/flynet" exact render={() => <Flynet color="#bf2431" />} />
-        <Route path="/" component={Page_Not_Found} />
-      </Switch>
-    </Router>
+    <React.Suspense fallback={<span>Loading...</span>}>
+      <Router>
+        <ScrollToTop />
+        <Switch>
+          <Route path="/" exact component={Homepage} />
+          <Route
+            path="/hotel-meano"
+            exact
+            render={() => <HotelMeano color="#fd871f" />}
+          />
+          <Route
+            path="/flynet"
+            exact
+            render={() => <Flynet color="#bf2431" />}
+          />
+          <Route path="/" component={Page_Not_Found} />
+        </Switch>
+      </Router>
+    </React.Suspense>
   );
 }
 
