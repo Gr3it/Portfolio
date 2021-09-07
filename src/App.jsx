@@ -1,4 +1,5 @@
 /* Libraries */
+
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -10,10 +11,12 @@ import Homepage from "./Homepage";
 import Page_Not_Found from "./Page_Not_Found";
 import Flynet from "./Project/Flynet";
 import HotelMeano from "./Project/HotelMeano";
+import ScrollToTop from "./Components/scrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route

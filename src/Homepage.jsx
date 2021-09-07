@@ -1,5 +1,5 @@
 /* Libraries */
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 /* Component/Pages */
 import Menu from "./Components/Menu";
@@ -11,42 +11,48 @@ import CTASection from "./Components/CTASection";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import ViewProject from "./Components/ViewProject";
+import CTAFixed from "./Components/CTAFixed";
 
 function Homepage() {
   /* Modal visibility */
 
   const [modalOpen, setModalOpen] = useState(false);
 
-  /* Save y scroll position  */
+  const root = document.getElementById("root");
 
-  window.addEventListener("scroll", () => {
-    document.documentElement.style.setProperty(
-      "--scroll-y",
-      `${window.scrollY}px`
-    );
+  root.addEventListener("scroll", () => {
+    if (cta.current === null) return;
+    if (cta.current.getBoundingClientRect().top < 10) {
+      document.getElementById("cta-fixed").style.transform =
+        "translate(0) scale(1)";
+    } else {
+      document.getElementById("cta-fixed").style.transform =
+        "translate(5rem) scale(0)";
+    }
   });
 
-  const handleModalOpen = () => {
-    setModalOpen(true);
-    document.querySelector(".App").classList.add("blur");
+  const cta = useRef(null);
 
-    const scrollY =
-      document.documentElement.style.getPropertyValue("--scroll-y");
-    const body = document.body;
-    body.style.position = "fixed";
-    body.style.top = `-${scrollY}`;
+  const handleModalOpen = () => {
+    document.getElementById("cta-fixed").style.transform =
+      "translate(5rem) scale(0)";
+    setTimeout(() => {
+      setModalOpen(true);
+    }, 125);
   };
 
   const handleModalClose = () => {
-    setModalOpen(false);
+    document.getElementById("contact-form").style.opacity = "0";
+    document.getElementById("contact-form").style.transform = "scale(0)";
 
-    const body = document.body;
-    const scrollY = body.style.top;
-    body.style.position = "";
-    body.style.top = "";
-    window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
-
-    document.querySelector(".App").classList.remove("blur");
+    setTimeout(() => {
+      setModalOpen(false);
+      setTimeout(() => {
+        if (cta.current.getBoundingClientRect().top < 10)
+          document.getElementById("cta-fixed").style.transform =
+            "translate(0) scale(1)";
+      }, 1);
+    }, 200);
   };
 
   return (
@@ -63,7 +69,7 @@ function Homepage() {
             Emanuele <br />
             Zini
           </h1>
-          <div className="home-cta">
+          <div className="home-cta" ref={cta}>
             <CTA variant="base" handleModalOpen={() => handleModalOpen()} />
             <ViewProject />
           </div>
@@ -647,6 +653,10 @@ function Homepage() {
       {/* Footer */}
       <Footer />
       {/* Footer End */}
+
+      {/* CTA Fixed */}
+      <CTAFixed handleModalOpen={() => handleModalOpen()} />
+      {/* CTA Fixed End */}
 
       {/* Contact Modal */}
       <Contact open={modalOpen} handleModalClose={() => handleModalClose()} />

@@ -1,11 +1,27 @@
 /* Libraries */
 import emailjs from "emailjs-com";
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact({ open = false, handleModalClose }) {
   const [captcha, setCaptcha] = useState(false);
+
+  useLayoutEffect(() => {
+    if (open) {
+      document.querySelector(".App").classList.add("blur");
+      document.getElementById("cta-fixed").style.display = "none";
+      setTimeout(() => {
+        document.getElementById("contact-form").style.transform = "scale(1)";
+        document.getElementById("contact-form").style.opacity = "1";
+      }, 1);
+    } else {
+      document.getElementById("cta-fixed").style.transform =
+        "translate(5rem) scale(0)";
+      document.getElementById("cta-fixed").style.display = "";
+      document.querySelector(".App").classList.remove("blur");
+    }
+  }, [open]);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -46,6 +62,7 @@ function Contact({ open = false, handleModalClose }) {
           }}
         >
           <form
+            id="contact-form"
             onSubmit={(e) => handleSubmit(e)}
             className="contact-content"
             onClick={(e) => {

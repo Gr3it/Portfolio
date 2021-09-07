@@ -9,10 +9,18 @@ function MenuElement({
   hamburger = false,
 }) {
   return (
-    <a
-      href={"#" + target}
+    <div
       className="menu-nav-elements"
-      onClick={hamburger ? () => handleMenuClose() : () => {}}
+      onClick={
+        hamburger
+          ? () => {
+              handleMenuClose();
+              document.getElementById(target).scrollIntoView();
+            }
+          : () => {
+              document.getElementById(target).scrollIntoView();
+            }
+      }
     >
       <h1 className={(selected ? "color-blue " : "") + "menu-title"}>
         {title}
@@ -31,7 +39,7 @@ function MenuElement({
           strokeWidth="3"
         />
       </svg>
-    </a>
+    </div>
   );
 }
 

@@ -13,13 +13,18 @@ function Menu({ handleModalOpen }) {
     { title: "About Me", target: "about" },
   ];
 
+  const [hamburgerActive, setHamburgerActive] = useState(false);
+
   const handleMenuClose = () => {
     setHamburgerActive(false);
     document.getElementById("root").style.overflowY = "scroll";
     document.body.style.position = "";
   };
 
-  const [hamburgerActive, setHamburgerActive] = useState(false);
+  /* Close the overlay menu if the width of the page increase over 800px*/
+  window.addEventListener("resize", () => {
+    if (hamburgerActive && window.innerWidth > 800) handleMenuClose();
+  });
 
   return (
     <header className="menu-background flex-center">
@@ -41,7 +46,7 @@ function Menu({ handleModalOpen }) {
             />
           </g>
         </svg>
-        <MenuElement key="home" title="Home" selected />
+        <MenuElement key="Home" title="Home" target="home" selected />
         {menu_data.map((element) => (
           <MenuElement
             key={element.title}
@@ -67,7 +72,6 @@ function Menu({ handleModalOpen }) {
             onClick={() => {
               setHamburgerActive(true);
               document.getElementById("root").style.overflowY = "hidden";
-              document.body.style.position = "fixed";
             }}
           >
             <svg
@@ -89,7 +93,14 @@ function Menu({ handleModalOpen }) {
           "menu-hamburger-container container-large"
         }
       >
-        <MenuElement key="home" title="Home" selected />
+        <MenuElement
+          key="Home"
+          title="Home"
+          target="home"
+          selected
+          handleMenuClose={() => handleMenuClose()}
+          hamburger
+        />
         {menu_data.map((element) => (
           <MenuElement
             key={element.title}
