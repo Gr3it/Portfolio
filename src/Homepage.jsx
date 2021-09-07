@@ -292,7 +292,7 @@ function Homepage() {
           EXPERIENCE
         </h6>
         <div className="section-title-container">
-          <h2 className="section-title">My Project</h2>
+          <h2 className="section-title">My Projects</h2>
           <svg
             className="section-title-svg"
             xmlns="http://www.w3.org/2000/svg"
