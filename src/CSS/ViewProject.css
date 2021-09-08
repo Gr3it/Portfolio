@@ -4,6 +4,8 @@
   flex-direction: row;
   gap: 1rem;
   text-decoration: underline;
+  justify-content: center;
+  align-items: center;
 }
 
 .view-project-container:hover {
@@ -17,5 +19,6 @@
 .view-project-svg {
   transform: translateY(10%);
   width: 1.5rem;
+  height: 2rem;
   animation: up-down 1.75s ease-in-out infinite;
 }
