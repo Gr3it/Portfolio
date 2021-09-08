@@ -111,7 +111,10 @@
   }
   .menu-nav-elements > .menu-svg {
     width: 12rem !important;
-    margin-top: 5rem !important;
+    transform: translateY(3rem) !important;
+  }
+  .menu-nav-elements:hover > .menu-svg {
+    transform: translateY(2.4rem) !important;
   }
 }
 
@@ -238,7 +241,7 @@
   .section-title-svg {
     width: 14rem !important;
     height: 2.5rem !important;
-    margin-top: 5.25rem !important;
+    transform: translateY(2.5rem) !important;
   }
   .grid-image-container {
     transform: rotate(-30deg) scale(0.6) !important;

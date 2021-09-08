@@ -11,7 +11,7 @@
   position: absolute;
   width: 20rem;
   height: 3.75rem;
-  margin-top: 7.25rem;
+  transform: translateY(3.6rem);
   z-index: 0;
 }
 
