@@ -10,6 +10,7 @@
 .section-title-svg {
   position: absolute;
   width: 20rem;
+  height: 3.75rem;
   margin-top: 7.25rem;
   z-index: 0;
 }
