@@ -8,7 +8,7 @@ import CTA from "./CTA";
 function Menu({ handleModalOpen }) {
   /* Title element array */
   const menu_data = [
-    { title: "My Project", target: "project" },
+    { title: "My Projects", target: "project" },
     { title: "My Experiments", target: "experiments" },
     { title: "About Me", target: "about" },
   ];
