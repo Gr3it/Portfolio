@@ -28,11 +28,13 @@ function ExperimentBubble({
           fill="#fff"
         />
       </svg>
-      <img
-        className="bubble-img"
-        src={process.env.PUBLIC_URL + "/Assets/" + img}
-        alt={img + " Preview"}
-      />
+      <div className="bubble-img-container">
+        <img
+          className="bubble-img"
+          src={process.env.PUBLIC_URL + "/Assets/" + img}
+          alt={img + " Preview"}
+        />
+      </div>
     </a>
   );
 }
