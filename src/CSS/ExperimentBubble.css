@@ -13,7 +13,10 @@
   transition: background 150ms ease-in;
   transition-delay: 150ms;
   box-shadow: 0 0 15px -5px var(--BlackShadow);
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
 .bubble-img {
