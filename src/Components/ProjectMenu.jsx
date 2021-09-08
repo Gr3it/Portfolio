@@ -1,5 +1,6 @@
-/* Libraries */
 import React from "react";
+
+import "../CSS/ProjectPagesMenu.css";
 
 function ProjectMenu({ github = "", link = "", hosted = false, repo = false }) {
   return (

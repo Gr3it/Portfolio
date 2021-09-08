@@ -1,7 +1,7 @@
-/* Libraries */
 import React, { useState } from "react";
 
-/* Component/Pages */
+import "../CSS/Menu.css";
+
 import MenuElement from "./MenuElement";
 import CTA from "./CTA";
 

@@ -1,0 +1,21 @@
+.view-project-container {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-decoration: underline;
+}
+
+.view-project-container:hover {
+  cursor: pointer;
+}
+
+.view-project {
+  text-decoration: underline;
+}
+
+.view-project-svg {
+  transform: translateY(10%);
+  width: 1.5rem;
+  animation: up-down 1.75s ease-in-out infinite;
+}

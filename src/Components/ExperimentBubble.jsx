@@ -1,5 +1,6 @@
-/* Libraries */
 import React from "react";
+
+import "../CSS/ExperimentBubble.css";
 
 function ExperimentBubble({
   dimension = "31.25rem",

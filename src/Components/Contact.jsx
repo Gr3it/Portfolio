@@ -1,8 +1,9 @@
-/* Libraries */
 import emailjs from "emailjs-com";
 import React, { useLayoutEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import ReCAPTCHA from "react-google-recaptcha";
+
+import "../CSS/Contact.css";
 
 function Contact({ open = false, handleModalClose }) {
   const [captcha, setCaptcha] = useState(false);

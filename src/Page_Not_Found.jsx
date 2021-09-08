@@ -1,5 +1,6 @@
-/* Libraries */
 import React from "react";
+
+import "./CSS/PageNotFound.css";
 
 function Page_Not_Found() {
   return (

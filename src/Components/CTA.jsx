@@ -1,5 +1,6 @@
-/* Libraries */
 import React from "react";
+
+import "../CSS/CTA.css";
 
 function CTA({ variant = "base", handleModalOpen }) {
   return (

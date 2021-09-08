@@ -1,0 +1,37 @@
+.cta-container {
+  position: relative;
+  padding: 0.5rem 3.5rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 10px 0px var(--BlackShadow);
+}
+
+.cta-pup-up-svg {
+  margin: auto;
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(0.125rem);
+}
+.cta-pup-up-svg > * {
+  fill: var(--White);
+}
+
+.cta-container:hover {
+  cursor: pointer;
+}
+
+.cta-container-white {
+  border: 0.3rem solid var(--White);
+  color: var(--White);
+}
+
+.cta-container-base {
+  border: 0.3rem solid var(--Secondary);
+  background-color: var(--Secondary);
+  color: var(--White);
+}
+
+.cta-container-blue {
+  border: 0.3rem solid var(--Secondary);
+  background-color: var(--Backgound);
+  color: var(--Secondary);
+}

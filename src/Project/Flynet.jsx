@@ -1,7 +1,7 @@
-/* Libraries */
 import React from "react";
 
-/* Component/Pages */
+import "../CSS/ProjectPages.css";
+
 import ProjectMenu from "../Components/ProjectMenu";
 import Footer from "../Components/Footer";
 

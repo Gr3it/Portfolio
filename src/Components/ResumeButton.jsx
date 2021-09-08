@@ -1,5 +1,6 @@
-/* Libraries */
 import React from "react";
+
+import "../CSS/ResumeButton.css";
 
 function ResumeButton() {
   return (

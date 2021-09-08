@@ -1,7 +1,7 @@
-/* Libraries */
 import React, { useRef, useState } from "react";
 
-/* Component/Pages */
+import "./CSS/Homepage.css";
+
 import Menu from "./Components/Menu";
 import CTA from "./Components/CTA";
 import ProjectCard from "./Components/ProjectCard";

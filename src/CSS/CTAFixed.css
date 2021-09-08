@@ -1,0 +1,24 @@
+.cta-fixed-container {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  background-color: var(--Secondary);
+  border-radius: 50%;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms;
+  transform: translate(5rem) scale(0);
+  z-index: 50;
+}
+
+.cta-fixed-svg {
+  width: 24px;
+  height: 24px;
+  transform: translateY(0.125rem);
+}
+
+.cta-fixed-svg > * {
+  fill: var(--White);
+}

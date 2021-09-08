@@ -1,0 +1,15 @@
+.resume-button-container {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: var(--White);
+}
+
+.resume-button-container:hover {
+  cursor: pointer;
+}
+
+.resume-button-svg {
+  width: 1.5rem;
+}

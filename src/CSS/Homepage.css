@@ -1,0 +1,194 @@
+/* Section */
+.section-title-container {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title-svg {
+  position: absolute;
+  width: 20rem;
+  margin-top: 7.25rem;
+  z-index: 0;
+}
+
+/* Watermark */
+.watermark {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.home-watermark {
+  top: 50%;
+  transform: translate(-50%, -50%) translate(20rem, -15rem);
+}
+
+.project-watermark,
+.experiments-watermark,
+.about-watermark {
+  margin-top: -5rem;
+}
+
+.passion-watermark {
+  margin-top: -15rem;
+  transform: translate(-60%);
+}
+
+.cta-watermark {
+  margin-top: -6rem;
+  color: var(--White5);
+  z-index: 0;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Home */
+.home {
+  height: calc(100vh - 6.875rem);
+  display: flex;
+  justify-content: space-between;
+  min-height: 60rem;
+}
+
+.home-left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home-SVG {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-SVG > * {
+  width: 40rem;
+  margin-left: -10rem;
+}
+
+/* Project */
+.project-container {
+  display: flex;
+  width: 100%;
+  margin: 10rem 0rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* Experiments */
+.experiments-container {
+  position: relative;
+  width: 100%;
+  margin: 10rem 0rem;
+  gap: 5rem;
+}
+
+.experiments-container > *:nth-child(2) {
+  margin-left: auto;
+  margin-top: -15rem;
+}
+
+.experiments-container > *:nth-child(3) {
+  right: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About */
+.about-container {
+  display: flex;
+  width: 100%;
+  margin: 10rem 0rem;
+  flex-direction: column;
+  gap: 6.25rem;
+}
+
+.about-first-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  gap: 5rem;
+}
+
+.about-text {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6.25rem;
+}
+
+.about-SVG {
+  margin: auto 0;
+  width: 33rem;
+}
+
+.about-passion-container {
+  display: flex;
+  flex-direction: row;
+  gap: 7.5rem;
+}
+
+.passion-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.passion-svg {
+  height: 16rem;
+  display: flex;
+  color: var(--Secondary);
+}
+
+.passion-svg > * {
+  margin: auto;
+  color: var(--Secondary);
+}
+
+/* Cta Section */
+.cta-section-svg {
+  margin-bottom: -1rem;
+}
+
+.cta-section-bcg {
+  background-color: var(--Secondary);
+  display: flex;
+  justify-content: center;
+}
+
+.cta-section-bcg > * {
+  z-index: 5;
+}
+
+.cta-section-container {
+  position: relative;
+  padding-bottom: 8rem;
+  gap: 4.5rem;
+}
+
+.cta-section-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8.5rem;
+  z-index: 10;
+}

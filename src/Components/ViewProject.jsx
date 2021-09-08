@@ -1,5 +1,6 @@
-/* Libraries */
 import React from "react";
+
+import "../CSS/ViewProject.css";
 
 function ViewProject() {
   return (

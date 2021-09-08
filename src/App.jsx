@@ -1,12 +1,11 @@
-/* Libraries */
-
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-/* CSS */
+import "./CSS/Animation.css";
+import "./CSS/Fonts.css";
 import "./CSS/App.css";
+import "./CSS/MediaQuery.css";
 
-/* Component/Pages */
 import ScrollToTop from "./Components/scrollToTop";
 
 const Homepage = React.lazy(() => import("./Homepage"));

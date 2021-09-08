@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../CSS/CTAFixed.css";
+
 function CTAFixed({ handleModalOpen }) {
   return (
     <div

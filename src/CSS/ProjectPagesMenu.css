@@ -1,0 +1,39 @@
+.project-page-menu {
+  height: 6.875rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--Backgound);
+  z-index: 2;
+}
+
+.project-page-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-page-menu-back {
+  width: 2rem;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+.project-page-menu-back:hover {
+  transform: scale(1.25);
+}
+
+.project-page-menu-link-container {
+  margin-left: auto;
+  display: flex;
+  gap: 5.25rem;
+}
+
+.project-page-menu-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.project-page-menu-link > svg {
+  width: 2.5rem;
+  transform: translate(0, -0.125rem);
+}
