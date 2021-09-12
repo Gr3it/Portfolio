@@ -17,7 +17,7 @@ function Hotel_Meano({ color }) {
       <div className="project-home container-large">
         <h2 className="home-subtitle">Hotel Meano</h2>
         <h1 className="project-title">
-          Hotel Meano website: presentation of the hotel and booking
+          Presentation of the hotel and implementation of a booking system
         </h1>
       </div>
       <div
