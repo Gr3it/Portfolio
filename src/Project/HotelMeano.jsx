@@ -6,6 +6,7 @@ import ProjectMenu from "../Components/ProjectMenu";
 import Footer from "../Components/Footer";
 
 function Hotel_Meano({ color }) {
+  document.documentElement.style.setProperty("--Scrollbar-color", color);
   return (
     <div className="flex-columns align-center">
       <ProjectMenu

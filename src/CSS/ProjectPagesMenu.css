@@ -1,6 +1,6 @@
 .project-page-menu {
   height: 6.875rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: var(--Backgound);
   z-index: 2;

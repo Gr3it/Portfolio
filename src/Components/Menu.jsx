@@ -17,8 +17,7 @@ function Menu({ handleModalOpen }) {
 
   const handleMenuClose = () => {
     setHamburgerActive(false);
-    document.getElementById("root").style.overflowY = "scroll";
-    document.body.style.position = "";
+    document.body.style.overflowY = "scroll";
   };
 
   /* Close the overlay menu if the width of the page increase over 800px*/
@@ -59,7 +58,7 @@ function Menu({ handleModalOpen }) {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 352 512"
-              className="menu-hamburger menu-hamburger-close"
+              className="menu-hamburger"
             >
               <path
                 fill="currentColor"
@@ -71,7 +70,7 @@ function Menu({ handleModalOpen }) {
           <div
             onClick={() => {
               setHamburgerActive(true);
-              document.getElementById("root").style.overflowY = "hidden";
+              document.body.style.overflowY = "hidden";
             }}
           >
             <svg

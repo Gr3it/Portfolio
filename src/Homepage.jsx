@@ -11,22 +11,26 @@ import CTASection from "./Components/CTASection";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import ViewProject from "./Components/ViewProject";
-import CTAFixed from "./Components/CTAFixed";
+import FAB from "./Components/FAB";
 
 function Homepage() {
   /* Modal visibility */
 
   const [modalOpen, setModalOpen] = useState(false);
 
-  const root = document.getElementById("root");
+  window.addEventListener("scroll", () => {
+    document.documentElement.style.setProperty(
+      "--scroll-y",
+      `${window.scrollY}px`
+    );
+  });
 
-  root.addEventListener("scroll", () => {
+  window.addEventListener("scroll", () => {
     if (cta.current === null) return;
     if (cta.current.getBoundingClientRect().top < 10) {
-      document.getElementById("cta-fixed").style.transform =
-        "translate(0) scale(1)";
+      document.getElementById("fab").style.transform = "translate(0) scale(1)";
     } else {
-      document.getElementById("cta-fixed").style.transform =
+      document.getElementById("fab").style.transform =
         "translate(5rem) scale(0)";
     }
   });
@@ -34,14 +38,26 @@ function Homepage() {
   const cta = useRef(null);
 
   const handleModalOpen = () => {
-    document.getElementById("cta-fixed").style.transform =
-      "translate(5rem) scale(0)";
+    document.getElementById("fab").style.transform = "translate(5rem) scale(0)";
     setTimeout(() => {
       setModalOpen(true);
+      const scrollY =
+        document.documentElement.style.getPropertyValue("--scroll-y");
+      const body = document.body;
+      body.style.position = "fixed";
+      body.style.top = `-${scrollY}`;
     }, 125);
   };
 
   const handleModalClose = () => {
+    const body = document.body;
+    const scrollY = body.style.top;
+
+    body.style.position = "";
+    body.style.top = "";
+    document.documentElement.style.scrollBehavior = "auto";
+    window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    document.documentElement.style.scrollBehavior = "";
     document.getElementById("contact-form").style.opacity = "0";
     document.getElementById("contact-form").style.transform = "scale(0)";
 
@@ -49,7 +65,7 @@ function Homepage() {
       setModalOpen(false);
       setTimeout(() => {
         if (cta.current.getBoundingClientRect().top < 10)
-          document.getElementById("cta-fixed").style.transform =
+          document.getElementById("fab").style.transform =
             "translate(0) scale(1)";
       }, 1);
     }, 200);
@@ -655,7 +671,7 @@ function Homepage() {
       {/* Footer End */}
 
       {/* CTA Fixed */}
-      <CTAFixed handleModalOpen={() => handleModalOpen()} />
+      <FAB handleModalOpen={() => handleModalOpen()} />
       {/* CTA Fixed End */}
 
       {/* Contact Modal */}

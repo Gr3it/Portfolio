@@ -23,7 +23,9 @@ function Footer() {
           </a>
           <p className="footer-email">
             Email: <br />
-            emanuele.zini11@gmail.com
+            <a href="mailto:contact@emanuelezini.com" className="footer-link">
+              contact@emanuelezini.com
+            </a>
           </p>
           <p className="footer-copyright">2021 Created By Emanuele Zini</p>
         </div>

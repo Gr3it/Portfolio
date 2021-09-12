@@ -73,10 +73,6 @@
   transform: translate(0);
 }
 
-.menu-hamburger-close {
-  margin-right: var(--Scrollbar-size);
-}
-
 .menu-hamburger-contact > .cta-container-blue {
   border: 0.9rem solid var(--Secondary);
 }

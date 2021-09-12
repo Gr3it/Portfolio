@@ -1,11 +1,17 @@
 .project-home {
-  height: calc(85vh - 6.875rem);
+  height: calc(100vh - 6.875rem - 5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 6.875rem;
+}
+
+.project-subtitle {
+  margin-top: auto;
 }
 
 .project-first-image {
+  position: relative;
   display: flex;
   width: 100%;
   padding: 8.25rem 0;
@@ -118,4 +124,10 @@
 }
 .project-row:first-child {
   flex-direction: row;
+}
+
+@media not screen and (hover: hover) and (pointer: fine) {
+  .project-home {
+    height: calc(100vh - 6.875rem - 5rem - 56px);
+  }
 }

@@ -5,10 +5,9 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useLayoutEffect(() => {
-    const root = document.getElementById("root");
-    root.style.scrollBehavior = "auto";
-    root.scrollTo({ top: 0, behavior: "auto" });
-    root.style.scrollBehavior = "";
+    document.documentElement.style.scrollBehavior = "auto";
+    document.documentElement.scrollTo({ top: 0, behavior: "auto" });
+    document.documentElement.style.scrollBehavior = "";
   }, [pathname]);
 
   return null;

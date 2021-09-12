@@ -15,10 +15,16 @@
   --Red: #e10052;
 
   --Scrollbar-size: 0.5rem;
+  --Scrollbar-color: #0d6ede;
 
   --ReCaptchaScale: 1;
 
   font-size: 12px;
+
+  scrollbar-color: var(--Scrollbar-color) var(--Backgound);
+  scrollbar-width: thin;
+
+  scroll-behavior: smooth;
 }
 
 /* Page*/
@@ -31,31 +37,25 @@
 }
 
 body {
+  height: 100%;
   background-color: var(--Backgound);
+  overflow-y: scroll;
 }
 
-.App {
-  scrollbar-color: var(--Secondary) var(--Backgound);
-  scrollbar-width: thin;
-}
-
-.App::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: var(--Scrollbar-size);
 }
 
-.App::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background-color: var(--Backgound);
 }
 
-.App::-webkit-scrollbar-thumb {
-  background-color: var(--Secondary);
+body::-webkit-scrollbar-thumb {
+  background-color: var(--Scrollbar-color);
   border-radius: 1rem;
 }
 
 .App {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 

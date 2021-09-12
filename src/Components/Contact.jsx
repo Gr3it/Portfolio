@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -8,18 +8,20 @@ import "../CSS/Contact.css";
 function Contact({ open = false, handleModalClose }) {
   const [captcha, setCaptcha] = useState(false);
 
+  const reCaptcha = useRef(null);
+
   useLayoutEffect(() => {
     if (open) {
       document.querySelector(".App").classList.add("blur");
-      document.getElementById("cta-fixed").style.display = "none";
+      document.getElementById("fab").style.display = "none";
       setTimeout(() => {
         document.getElementById("contact-form").style.transform = "scale(1)";
         document.getElementById("contact-form").style.opacity = "1";
       }, 1);
     } else {
-      document.getElementById("cta-fixed").style.transform =
+      document.getElementById("fab").style.transform =
         "translate(5rem) scale(0)";
-      document.getElementById("cta-fixed").style.display = "";
+      document.getElementById("fab").style.display = "";
       document.querySelector(".App").classList.remove("blur");
     }
   }, [open]);
@@ -28,12 +30,13 @@ function Contact({ open = false, handleModalClose }) {
     e.preventDefault();
 
     emailjs.sendForm(
-      "gmail",
+      "smtp",
       "Portfolio_template",
       e.target,
       process.env.REACT_APP_EMAILJS_ID
     );
-
+    setCaptcha(false);
+    reCaptcha.current.reset();
     e.target.reset();
   }
 
@@ -123,6 +126,7 @@ function Contact({ open = false, handleModalClose }) {
             </div>
             <div id="contact-captcha" className="contact-captcha">
               <ReCAPTCHA
+                ref={reCaptcha}
                 sitekey={process.env.REACT_APP_SITE_KEY}
                 onChange={() => setCaptcha(true)}
                 onExpired={() => setCaptcha(false)}
