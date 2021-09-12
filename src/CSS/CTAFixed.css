@@ -11,6 +11,7 @@
   transition: all 200ms;
   transform: translate(5rem) scale(0);
   z-index: 50;
+  cursor: pointer;
 }
 
 .cta-fixed-svg {
