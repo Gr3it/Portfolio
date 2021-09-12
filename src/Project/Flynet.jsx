@@ -12,7 +12,7 @@ function Flynet({ color }) {
       <div className="project-home container-large">
         <h2 className="home-subtitle">Flynet</h2>
         <h1 className="project-title">
-          Cagliari airport website, flights infos and manage panel
+          Cagliari airport website, flights info and manage panel
         </h1>
       </div>
       <div
