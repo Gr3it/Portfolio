@@ -42,7 +42,7 @@ function ProjectMenu({ github = "", link = "", hosted = false, repo = false }) {
               rel="noreferrer noopener"
               className="project-page-menu-link"
             >
-              <h3 className="menu-title">Go To Website</h3>
+              <h3 className="menu-title">Go to website</h3>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
                   fill="currentColor"
