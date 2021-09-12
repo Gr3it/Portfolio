@@ -14,7 +14,7 @@ function Footer() {
             className="footer-logo"
           />
           <a
-            href="https://github.com/Gr3it"
+            href="https://github.com/Gr3it/portfolio"
             rel="noreferrer noopener"
             target="_blank"
             className="footer-link"
