@@ -23,7 +23,7 @@ function Footer() {
           </a>
           <p className="footer-email">
             Email: <br />
-            emmanuele.zini11@gmail.com
+            emanuele.zini11@gmail.com
           </p>
           <p className="footer-copyright">2021 Created By Emanuele Zini</p>
         </div>
