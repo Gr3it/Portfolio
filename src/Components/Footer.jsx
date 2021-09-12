@@ -28,7 +28,7 @@ function Footer() {
           <p className="footer-copyright">2021 Created By Emanuele Zini</p>
         </div>
         <div className="footer-columns">
-          <h1 className="footer-title">Project</h1>
+          <h1 className="footer-title">Projects</h1>
           <Link to={"/"} className="footer-link">
             Cooming Soon
           </Link>
@@ -40,7 +40,7 @@ function Footer() {
           </Link>
         </div>
         <div className="footer-columns">
-          <h1 className="footer-title">Experiment</h1>
+          <h1 className="footer-title">Experiments</h1>
           <a
             href="https://github.com/Gr3it/Building_plant"
             target="_blank"
