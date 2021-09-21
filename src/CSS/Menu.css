@@ -80,6 +80,7 @@
 .menu-hamburger-contact > .cta-container {
   padding: 1.25rem 6rem;
   border-radius: 15rem;
+  box-shadow: none;
 }
 .menu-hamburger-contact > .cta-container > .buttons-text {
   font-size: 3.5rem;

@@ -14,6 +14,7 @@ const Flynet = React.lazy(() => import("./Project/Flynet"));
 const HotelMeano = React.lazy(() => import("./Project/HotelMeano"));
 
 function App() {
+  
   let vh = window.innerHeight * 0.01;
 
   document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -21,7 +22,7 @@ function App() {
   window.addEventListener('resize', () => {
     vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+  });
 
 
 
