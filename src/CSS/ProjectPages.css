@@ -125,9 +125,3 @@
 .project-row:first-child {
   flex-direction: row;
 }
-
-/*@media not screen and (hover: hover) and (pointer: fine) {
-  .project-home {
-    height: calc(100vh - 6.875rem - 5rem - 56px);
-  }
-}*/
