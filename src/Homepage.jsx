@@ -421,15 +421,18 @@ function Homepage() {
             <div className="about-text">
               <h1 className="sub-section-title">Who I Am</h1>
               <p className="paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Mollitia, incidunt? Et incidunt repudiandae neque blanditiis
-                impedit odio perspiciatis illo pariatur est sint, sapiente,
-                dolorem odit accusamus.
+                I am a student based in Trento, Italy. I love programming and
+                I'm currently attending the University of Trento, IT study path.
+                Meanwhile I'm expanding my knowledge of web development and
+                UI/UX design by my own.
                 <br />
-                <br /> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Mollitia, incidunt? Et incidunt repudiandae neque blanditiis
-                impedit odio perspiciatis illo pariatur est sint, sapiente,
-                dolorem odit accusamus.
+                <br />
+                <br />
+                My other interest are everything related to crypto currency,
+                marketing and advertising, personal finance and investment, pc
+                hardware. In my free time I also used to read books and sometime
+                I like to take a break with a match with some friend in video
+                games.
               </p>
             </div>
 
@@ -638,21 +641,21 @@ function Homepage() {
           <div className="about-passion-container">
             <PassionCard
               title="Design"
-              text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, incidunt? Et incidunt repudiandae neque blanditiis impedit odio perspiciatis illo pariatur est sint, sapiente, dolorem odit accusamus."
+              text="In recent years I have begun to become more and more interested in the world of design. I learned how to use photoshop and illustrator and followed course on logo and illustration creation and UI & UX Design."
               svg="Design.svg"
               width="12rem"
               height="12rem"
             />
             <PassionCard
               title="Coding"
-              text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, incidunt? Et incidunt repudiandae neque blanditiis impedit odio perspiciatis illo pariatur est sint, sapiente, dolorem odit accusamus."
+              text=""
               svg="Coding.svg"
               width="9rem"
               height="12rem"
             />
             <PassionCard
               title="Gaming"
-              text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, incidunt? Et incidunt repudiandae neque blanditiis impedit odio perspiciatis illo pariatur est sint, sapiente, dolorem odit accusamus."
+              text=""
               svg="Gaming.svg"
               width="15rem"
               height="7.6rem"
