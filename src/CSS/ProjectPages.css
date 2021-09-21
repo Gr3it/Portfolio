@@ -1,5 +1,5 @@
 .project-home {
-  height: calc(100vh - 6.875rem - 5rem);
+  height: calc(calc(var(--vh, 1vh) * 100) - 6.875rem - 5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,8 +126,8 @@
   flex-direction: row;
 }
 
-@media not screen and (hover: hover) and (pointer: fine) {
+/*@media not screen and (hover: hover) and (pointer: fine) {
   .project-home {
     height: calc(100vh - 6.875rem - 5rem - 56px);
   }
-}
+}*/
