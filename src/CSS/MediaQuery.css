@@ -1,3 +1,12 @@
+@media screen and (max-width: 1600px) {
+  .about-passion-container {
+    grid-template-areas:
+      "Design Coding"
+      "Gaming Crypto" !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   :root {
     font-size: 12px !important;
@@ -82,8 +91,11 @@
     user-select: none !important;
   }
   .about-passion-container {
-    margin: 0 auto !important;
-    flex-direction: column !important;
+    margin: 0 auto;
+    grid-template-areas:
+      "Design" "Coding"
+      "Gaming" "Crypto" !important;
+    grid-template-columns: 1fr !important;
     max-width: 400px !important;
   }
   .footer-container {

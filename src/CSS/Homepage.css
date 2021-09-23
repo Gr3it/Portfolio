@@ -140,9 +140,11 @@
 }
 
 .about-passion-container {
-  display: flex;
+  display: grid;
   flex-direction: row;
   gap: 7.5rem;
+  grid-template-areas: "Design Coding Gaming Crypto";
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .passion-container {
@@ -154,15 +156,18 @@
   gap: 1.25rem;
 }
 
-.passion-svg {
+.passion-img {
   height: 16rem;
   display: flex;
   color: var(--Secondary);
 }
 
-.passion-svg > * {
+.passion-img > * {
+  height: 100%;
+  padding: 1rem;
   margin: auto;
   color: var(--Secondary);
+  filter: drop-shadow(0 0 0.375rem var(--ImgBackgorund));
 }
 
 /* Cta Section */
