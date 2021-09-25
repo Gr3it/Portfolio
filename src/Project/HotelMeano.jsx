@@ -60,15 +60,17 @@ function Hotel_Meano({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            The goal of this project was to develop a website and redesign the
+            network infrastructures for a Hotel based in Meano, a small city of
+            Trento. The network infrastructure has to been designed across 2
+            locations: the hotel and the office building. It also has to
+            implement an advanced wifi system for the hotel users and the
+            offices. For the website the requirements were to create the main
+            page showing the hotel build and what are the services offered by
+            the hotel personal, farther more it has to include rooms prices,
+            contact, and photos. The most important request for the site was to
+            create a system that would let customers make a reservation of rooms
+            on their own directly from the website.
           </p>
         </div>
       </div>
@@ -105,17 +107,12 @@ function Hotel_Meano({ color }) {
       </div>
       <div className="flex-columns container-large">
         <div className="project-description">
-          <h1 className="width100 sub-section-title">The challenge</h1>
+          <h1 className="width100 sub-section-title">The booking page</h1>
           <p className="width100 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            This page has the task to drive the customers through the multiple
+            steps to complete a reservation. The booking process is divided into
+            4 steps: stay period selection, rooms selection, personal
+            information insertion, and total costs of the booking.
           </p>
         </div>
         <div className="project-row">
@@ -126,10 +123,9 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita
+            At the first step, the customer has to select the period in which he
+            wishes to stay. Those dates are used to show in the next step the
+            rooms available.
           </p>
         </div>
         <div className="project-row">
@@ -140,10 +136,10 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita
+            In the second step, the page shows on a 3d map of the hotel which
+            rooms are already occupied, and which are available. The customer
+            clicking on the map can select and deselect the rooms that want to
+            book.
           </p>
         </div>
         <div className="project-row">
@@ -154,10 +150,11 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita
+            In the third step, the customer has to insert his personal
+            information that are needed to accomplish the booking. Those data
+            include information such ad: first and second name, fiscal code,
+            email, and date of birth. Those data will be stored in the hotel
+            database.
           </p>
         </div>
         <div className="project-row">
@@ -168,10 +165,8 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita
+            in the last step, the total cost of the overnight stay is presented
+            to the customer, broken down in detail.
           </p>
         </div>
       </div>
