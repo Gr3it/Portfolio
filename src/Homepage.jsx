@@ -421,18 +421,18 @@ function Homepage() {
             <div className="about-text">
               <h1 className="sub-section-title">Who I Am</h1>
               <p className="paragraph">
-                I am an bachelor student based in Trento, Italy. While following
-                an IT study formation, I am also a passionate autodidact in Web
-                Development and UI/UX design. I have long been interested in the
-                field of computer science, for instance by participating in a
-                robotics competition.
+                I am a bachelor's student based in Trento, Italy. While
+                following an IT study formation, I am also a passionate
+                autodidact in Web Development and UI/UX design. I have long been
+                interested in the field of computer science, for instance by
+                participating in a robotics competition.
                 <br />
                 <br />
                 <br />
                 Furthermore, I am passionate about marketing and advertising,
-                personal finance and investment, pc hardware and crypto
-                currency. In my free time I enjoy reading books and sometimes
-                playing video games with friends.
+                personal finance and investment, pc hardware, and
+                cryptocurrency. In my free time, I enjoy reading books and
+                sometimes playing video games with friends.
               </p>
             </div>
 
@@ -641,7 +641,7 @@ function Homepage() {
           <div className="about-passion-container">
             <PassionCard
               title="Design"
-              text="In the recent years I became more and more interested in the world of design. I learned how to use Photoshop and Illustrator and followed courses in logo and illustration creation and UI & UX Design."
+              text="In recent years I became more and more interested in the world of design. I learned how to use Photoshop and Illustrator and followed courses in logo and illustration creation and UI & UX Design."
               svg="Design.png"
             />
             <PassionCard title="Coding" text="" svg="Coding.png" />
