@@ -55,15 +55,12 @@ function Flynet({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            The goal of this project was to develop a website using the java
+            servlet. The site has to read the data from a MySQL database and
+            show them on various pages. Moreover, it has to provide a management
+            interface for the staff through a login managed with the user on the
+            database. On the homepage, we have to find some useful information
+            about the airport like maps and weather forecasts.
           </p>
         </div>
       </div>
@@ -100,17 +97,12 @@ function Flynet({ color }) {
       </div>
       <div className="flex-columns container-large">
         <div className="project-description">
-          <h1 className="width100 sub-section-title">The challenge</h1>
+          <h1 className="width100 sub-section-title">The pages</h1>
           <p className="width100 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            The website is based on 3 main pages which are the departures and
+            arrival page, the search flights page, and the management panel. The
+            user can go through those pages with a handy menu positioned at the
+            top of the page.
           </p>
         </div>
         <div className="project-row">
@@ -128,10 +120,10 @@ function Flynet({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita
+            The departures and the arrival pages are two pages very similar,
+            which show the flights arriving and departing reading the data from
+            the database. They display those data in a comfy table highlighting
+            the row where are you on with the mouse.
           </p>
         </div>
         <div className="project-row">
@@ -142,10 +134,10 @@ function Flynet({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita
+            The search flights page is a page in which the user can select
+            clicking the top left button an airport and see all the flights to
+            and from that destination. Otherwise, on the top right part of the
+            page, the user can search a flight via flight code or air
           </p>
         </div>
         <div className="project-row">
@@ -156,10 +148,11 @@ function Flynet({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita
+            The management panel is a page reserved for the staff only, which
+            permits after logging with a valid account to edit the data stored
+            in the database. With the help of multiple forms the staff can
+            perform the following action: add a new flight, add a new flight
+            company, edit an existing flight and delete an existing flight.
           </p>
         </div>
       </div>
