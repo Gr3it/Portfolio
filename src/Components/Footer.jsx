@@ -52,20 +52,20 @@ function Footer() {
             3D Building plan
           </a>
           <a
-            href="/"
+            href="https://github.com/Gr3it/learning-loading-animation"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
           >
-            PlaceHolder
+            Loading Animation
           </a>
           <a
-            href="/"
+            href="https://github.com/Gr3it/learning-gradient-text"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
           >
-            PlaceHolder
+            Gradient color text
           </a>
         </div>
         <div className="footer-columns">

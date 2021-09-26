@@ -381,15 +381,15 @@ function Homepage() {
           />
           <ExperimentBubble
             dimension="28.125rem"
-            title="Cooming Soon"
-            link="https://github.com/Gr3it/Building_plant"
-            img="3Dbuilding.png"
+            title="Loading Animation"
+            link="https://github.com/Gr3it/learning-loading-animation"
+            img="LoadingAnimation.png"
           />
           <ExperimentBubble
             dimension="25rem"
-            title="Cooming Soon"
-            link="https://github.com/Gr3it/Building_plant"
-            img="3Dbuilding.png"
+            title="Gradient color text"
+            link="https://github.com/Gr3it/learning-gradient-text"
+            img="GradientColorText.png"
           />
         </div>
       </section>
