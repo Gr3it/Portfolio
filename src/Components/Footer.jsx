@@ -70,7 +70,11 @@ function Footer() {
         </div>
         <div className="footer-columns">
           <h1 className="footer-title">About Me</h1>
-          <a href="/" className="footer-link">
+          <a
+            href="/Zini_Emanuele_English.pdf"
+            download="Emanuele Zini CV"
+            className="footer-link"
+          >
             Resume
           </a>
           <a
