@@ -20,7 +20,7 @@
 .project-first-image > * > img {
   margin: auto;
   height: auto;
-  box-shadow: 0 0 15px 5px var(--BlackShadow);
+  box-shadow: 0 0 0.625rem 0.3rem var(--BlackShadow);
 }
 
 .project-description {
@@ -53,7 +53,7 @@
 
 .grid-image-container > img {
   width: 60rem;
-  box-shadow: 0 0 15px 5px var(--BlackShadow);
+  box-shadow: 0 0 0.625rem 0.3rem var(--BlackShadow);
 }
 
 .grid-image-container > img:nth-child(1) {
@@ -104,19 +104,19 @@
 .project-row-image-dual > img {
   margin: 3.5rem 3.5rem calc(3.5rem + 10%) 3.5rem;
   width: 70%;
-  box-shadow: 0 0 15px 5px var(--BlackShadow);
+  box-shadow: 0 0 0.625rem 0.3rem var(--BlackShadow);
 }
 .project-row-image-dual > img:last-child {
   position: absolute;
   margin: 0;
   right: 3.5rem;
   bottom: 3.5rem;
-  box-shadow: 0 0 15px 5px var(--BlackShadow);
+  box-shadow: 0 0 0.625rem 0.3rem var(--BlackShadow);
 }
 
 .project-row-image > img {
   width: 100%;
-  box-shadow: 0 0 15px 5px var(--BlackShadow);
+  box-shadow: 0 0 0.625rem 0.3rem var(--BlackShadow);
 }
 
 .project-row:nth-child(odd) {

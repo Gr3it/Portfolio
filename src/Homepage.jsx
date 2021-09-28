@@ -326,7 +326,7 @@ function Homepage() {
         </div>
         <div className="project-container">
           <ProjectCard
-            title="Cooming Soon"
+            title="Color Screentest"
             tags="HTML, CSS, Javascript, React Native"
             date="August 2021"
             url=""
@@ -641,12 +641,24 @@ function Homepage() {
           <div className="about-passion-container">
             <PassionCard
               title="Design"
-              text="In recent years I became more and more interested in the world of design. I learned how to use Photoshop and Illustrator and followed courses in logo and illustration creation and UI & UX Design."
+              text="In recent years I became more and more interested in the world of design. I learned how to use Photoshop and Illustrator while applying the skills learned in projects and the creation of this website. I additionally followed courses in logo and illustration creation and UI & UX Design."
               svg="Design.png"
             />
-            <PassionCard title="Coding" text="" svg="Coding.png" />
-            <PassionCard title="Gaming" text="" svg="Gaming.png" />
-            <PassionCard title="Crypto" text="" svg="Crypto.png" />
+            <PassionCard
+              title="Coding"
+              text="I am passionate about learning new programming languages, how they work, their diversity and strengths. My interest expanded to gaining basic knowledge in Machine Learning and Data Science."
+              svg="Coding.png"
+            />
+            <PassionCard
+              title="Gaming"
+              text="In my free time, I enjoy playing collaborative computer games. In particular, playing puzzles which require the coordination and mutual effort of six players to reach the goal. I have been often involved in the creation of strategies and management of the rest of my team."
+              svg="Gaming.png"
+            />
+            <PassionCard
+              title="Crypto"
+              text="Through getting interested in the world of cryptocurrency, I studied the characteristics of Defi and Cefi and, more specifically, the functioning of the smart contracts and the various chains characteristic. With the expertise gained, I created a portfolio to manage my investments."
+              svg="Crypto.png"
+            />
           </div>
         </div>
       </section>

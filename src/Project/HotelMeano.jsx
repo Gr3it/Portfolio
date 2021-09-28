@@ -61,16 +61,16 @@ function Hotel_Meano({ color }) {
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
             The goal of this project was to develop a website and redesign the
-            network infrastructures for a Hotel based in Meano, a small city of
-            Trento. The network infrastructure has to been designed across 2
-            locations: the hotel and the office building. It also has to
-            implement an advanced wifi system for the hotel users and the
-            offices. For the website the requirements were to create the main
-            page showing the hotel build and what are the services offered by
-            the hotel personal, farther more it has to include rooms prices,
-            contact, and photos. The most important request for the site was to
-            create a system that would let customers make a reservation of rooms
-            on their own directly from the website.
+            network infrastructures for a hotel based in the small town of
+            Meano, nearby Trento. We were asked to create the main webpage of
+            the hotel, which had to show the hotel’s building and include the
+            services offered to the guests as well as room prices and contact
+            information. The network infrastructure required to be designed
+            across two locations: the hotel and the office building. The most
+            important request for the website was to conceive a system through
+            which customers could make a reservation online. An additional
+            directive was to implement an advanced Wifi system both for the
+            hotel’s guests and offices.
           </p>
         </div>
       </div>
@@ -109,10 +109,9 @@ function Hotel_Meano({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The booking page</h1>
           <p className="width100 paragraph-justify">
-            This page has the task to drive the customers through the multiple
-            steps to complete a reservation. The booking process is divided into
-            4 steps: stay period selection, rooms selection, personal
-            information insertion, and total costs of the booking.
+            This page leads the customer through the multiple-step process of
+            making a reservation. The four-step process is presented in the
+            following section.
           </p>
         </div>
         <div className="project-row">
@@ -123,9 +122,9 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            At the first step, the customer has to select the period in which he
-            wishes to stay. Those dates are used to show in the next step the
-            rooms available.
+            The guest is first asked to select the desired length of stay. This
+            information is used by the system to show which rooms are available
+            for the booking.
           </p>
         </div>
         <div className="project-row">
@@ -136,10 +135,10 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            In the second step, the page shows on a 3d map of the hotel which
-            rooms are already occupied, and which are available. The customer
-            clicking on the map can select and deselect the rooms that want to
-            book.
+            The next page will lead to a 3D map of the hotel displaying which
+            rooms are available for a reservation and which ones are already
+            booked. The customer can select and deselect the rooms of interest
+            by interacting with the map.
           </p>
         </div>
         <div className="project-row">
@@ -150,11 +149,10 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            In the third step, the customer has to insert his personal
-            information that are needed to accomplish the booking. Those data
-            include information such ad: first and second name, fiscal code,
-            email, and date of birth. Those data will be stored in the hotel
-            database.
+            Once selected the desired room, the guest is asked to fill in their
+            personal information relevant for the finalizing of the booking,
+            such as name, surname, ID information, and email. The data will be
+            stored in the hotel database.
           </p>
         </div>
         <div className="project-row">
@@ -165,8 +163,9 @@ function Hotel_Meano({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            in the last step, the total cost of the overnight stay is presented
-            to the customer, broken down in detail.
+            At the last step, the total amount and details of the reservation
+            are presented to the customer. The information for paying the
+            deposit, which is used as a confirmation of the booking is provided.
           </p>
         </div>
       </div>
