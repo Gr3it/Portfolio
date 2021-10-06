@@ -2,7 +2,14 @@ import React from "react";
 
 import "../CSS/ProjectPagesMenu.css";
 
-function ProjectMenu({ github = "", link = "", hosted = false, repo = false }) {
+function ProjectMenu({
+  githubLink = "",
+  webSiteLink = "",
+  playStoreLink = "",
+  github = false,
+  webSite = false,
+  playStore = false,
+}) {
   return (
     <div className="project-page-menu flex-center">
       <div className="project-page-menu-container container-large">
@@ -15,9 +22,9 @@ function ProjectMenu({ github = "", link = "", hosted = false, repo = false }) {
           </svg>
         </a>
         <div className="project-page-menu-link-container">
-          {repo && (
+          {github && (
             <a
-              href={github}
+              href={githubLink}
               target="_blank"
               rel="noreferrer noopener"
               className="project-page-menu-link"
@@ -35,9 +42,9 @@ function ProjectMenu({ github = "", link = "", hosted = false, repo = false }) {
               </svg>
             </a>
           )}
-          {hosted && (
+          {webSite && (
             <a
-              href={link}
+              href={webSiteLink}
               target="_blank"
               rel="noreferrer noopener"
               className="project-page-menu-link"
@@ -48,6 +55,30 @@ function ProjectMenu({ github = "", link = "", hosted = false, repo = false }) {
                   fill="currentColor"
                   d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM474.67,0H316a28,28,0,0,0-28,28V46.71A28,28,0,0,0,316.79,73.9L384,72,135.06,319.09l-.06.06a24,24,0,0,0,0,33.94l23.94,23.85.06.06a24,24,0,0,0,33.91-.09L440,128l-1.88,67.22V196a28,28,0,0,0,28,28H484a28,28,0,0,0,28-28V37.33h0A37.33,37.33,0,0,0,474.67,0Z"
                 ></path>
+              </svg>
+            </a>
+          )}
+          {playStore && (
+            <a
+              href={playStoreLink}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="project-page-menu-link"
+            >
+              <h3 className="menu-title">Play Store</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512.000000 513.000000"
+              >
+                <g
+                  transform="translate(0.000000,513.000000) scale(0.100000,-0.100000)"
+                  fill="#currentColor"
+                >
+                  <path d="M675 5121 c-16 -3 -30 -10 -29 -15 2 -13 2198 -2305 2206 -2303 5 1 95 93 200 203 106 111 271 283 366 382 l172 180 -1286 742 c-708 409 -1312 755 -1343 770 -91 44 -199 60 -286 41z" />
+                  <path d="M360 4910 c-12 -18 -33 -62 -46 -98 l-24 -67 0 -2175 c0 -1550 3 -2186 11 -2215 14 -51 60 -146 69 -143 13 6 2265 2360 2265 2368 0 5 -493 522 -1095 1150 -602 627 -1109 1157 -1126 1176 l-32 35 -22 -31z" />
+                  <path d="M3457 2995 l-398 -415 367 -382 c202 -211 386 -403 409 -427 l42 -43 389 223 c443 255 478 282 542 416 36 77 37 80 37 198 0 118 -1 121 -37 198 -65 135 -98 160 -549 420 -218 125 -397 227 -400 227 -2 0 -183 -187 -402 -415z" />
+                  <path d="M1728 1192 l-1118 -1167 48 -12 c68 -16 147 -14 222 5 52 14 327 168 1380 776 723 417 1322 764 1331 770 14 9 -41 71 -358 401 -205 215 -377 391 -381 392 -4 1 -510 -524 -1124 -1165z" />
+                </g>
               </svg>
             </a>
           )}

@@ -23,6 +23,18 @@
   box-shadow: 0 0 0.625rem 0.3rem var(--BlackShadow);
 }
 
+.project-first-image > * > video {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.project-second-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .project-description {
   padding: 8.25rem 0;
   display: flex;

@@ -10,7 +10,10 @@ function Flynet({ color }) {
   document.documentElement.style.setProperty("--Scrollbar-color", color);
   return (
     <div className="flex-columns align-center">
-      <ProjectMenu github="https://github.com/Gr3it/Servlet-Flynet" repo />
+      <ProjectMenu
+        githubLink="https://github.com/Gr3it/Servlet-Flynet"
+        github
+      />
       <div className="project-home container-large">
         <h2 className="home-subtitle project-subtitle">Flynet</h2>
         <h1 className="project-title">

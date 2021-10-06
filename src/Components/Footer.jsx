@@ -31,8 +31,8 @@ function Footer() {
         </div>
         <div className="footer-columns">
           <h1 className="footer-title">Projects</h1>
-          <Link to={"/"} className="footer-link">
-            Cooming Soon
+          <Link to={"/color-screentest"} className="footer-link">
+            Color Screentest
           </Link>
           <Link to={"/hotel-meano"} className="footer-link">
             Hotel Meano

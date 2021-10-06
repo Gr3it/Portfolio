@@ -11,10 +11,10 @@ function Hotel_Meano({ color }) {
   return (
     <div className="flex-columns align-center">
       <ProjectMenu
-        github="https://github.com/Gr3it/School-Elaborate"
-        link="https://hotelmeano.altervista.org/"
-        repo
-        hosted
+        githubLink="https://github.com/Gr3it/School-Elaborate"
+        webSiteLink="https://hotelmeano.altervista.org/"
+        github
+        webSite
       />
       <div className="project-home container-large">
         <h2 className="home-subtitle project-subtitle">Hotel Meano</h2>

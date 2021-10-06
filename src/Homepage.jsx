@@ -327,11 +327,10 @@ function Homepage() {
         <div className="project-container">
           <ProjectCard
             title="Color Screentest"
-            tags="HTML, CSS, Javascript, React Native"
+            tags="HTML, CSS, Javascript, React-Native"
             date="August 2021"
-            url=""
+            url="color-screentest"
             img="RGBColorPreview.png"
-            disable
           />
           <ProjectCard
             title="Hotel Meano"
