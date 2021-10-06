@@ -327,7 +327,7 @@ function Homepage() {
         <div className="project-container">
           <ProjectCard
             title="Color Screentest"
-            tags="HTML, CSS, Javascript, React-Native"
+            tags="HTML, CSS, Javascript, React&#x2011;Native"
             date="August 2021"
             url="color-screentest"
             img="RGBColorPreview.png"
