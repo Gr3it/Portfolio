@@ -41,7 +41,7 @@ function ColorScreentest({ color }) {
       <div className="project-home container-large">
         <h2 className="home-subtitle project-subtitle">Color Screentest</h2>
         <h1 className="project-title">
-          The easies app for test display defects and compare colors amongst
+          The easiest app for test display defects and compare colors amongst
           various devices
         </h1>
         <div
@@ -90,8 +90,14 @@ function ColorScreentest({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
-            In order to learn React-Native I ideated this project that
-            comprehends lots of the basis of
+            As I wanted to try to develop an app for mobile, I decided to test
+            and develop my knowledge of React-Native. I conceived the project to
+            be able to put in practice the diverse main features of this
+            programming language, such as useState, StyleSheet, custom
+            components, 3rd party modules, and some android custom code for
+            manage user light and dark mode. The project wants to be a simple
+            application, that through different menus allows you to change the
+            color of the app background.
           </p>
         </div>
       </div>
@@ -109,12 +115,12 @@ function ColorScreentest({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The App</h1>
           <p className="width100 paragraph-justify">
-            The app with a tap on the display show an overlay composed by two
+            The app with a tap on the display shows an overlay composed of two
             menu with which the user can change the background color by
-            selecting some preset or just by create che color of the background
-            by their own through 3 slider that control the 3 rgb parameter (red,
-            green, blue). While the overlay is open you can tap outside of the
-            menu for hide until you tap again.
+            selecting some preset or just by create the color of the background
+            by their own through 3 sliders that control the 3 RGB parameters
+            (red, green, blue). While the overlay is open you can tap outside of
+            the menu for hiding until you tap again.
           </p>
         </div>
         <div className="project-row">
