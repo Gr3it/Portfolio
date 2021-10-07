@@ -130,14 +130,15 @@ function ColorScreentest({ color }) {
               process.env.PUBLIC_URL + "/Assets/ColorScreentest/ScreenMenu1.jpg"
             }
             alt="First Menu screenshot"
+            style={{ padding: 0 }}
           />
 
           <p className="width50 paragraph-justify">
-            The first menu that we find in the modal is composed by three slider
-            related to the three parameters of RGB, Red, Green and Blue. With
-            those slider we can change the individual values of the color of the
-            background. To the right of the sliders we find a text label that
-            show the current value of the corresponding color
+            The first menu that we find in the modal is composed of three
+            sliders related to the three parameters of RGB, Red, Green, and
+            Blue. With those sliders, we can change the individual values of the
+            color of the background. To the right of the sliders, we find a text
+            label that show the current value of the corresponding color
           </p>
         </div>
         <div className="project-row">
@@ -147,6 +148,7 @@ function ColorScreentest({ color }) {
               process.env.PUBLIC_URL + "/Assets/ColorScreentest/ScreenMenu2.jpg"
             }
             alt="Second Menu screenshot"
+            style={{ padding: 0 }}
           />
           <p className="width50 paragraph-justify">
             The menu that we find to the right of the modal is composed by 24
