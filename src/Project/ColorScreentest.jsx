@@ -72,25 +72,26 @@ function ColorScreentest({ color }) {
             id="anchor-image"
             style={{ position: "absolute", top: "-6.875rem", left: 0 }}
           ></div>
-          <video
-            src={process.env.PUBLIC_URL + "/Assets/ColorScreentest/Trailer.mp4"}
-            autoPlay
-            loop
-            muted
-            ref={videoRef}
-          />
+          <video autoPlay loop muted ref={videoRef}>
+            <source
+              src={
+                process.env.PUBLIC_URL + "/Assets/ColorScreentest/Trailer.mp4"
+              }
+            />
+            <source
+              src={
+                process.env.PUBLIC_URL + "/Assets/ColorScreentest/Trailer.webm"
+              }
+            />
+          </video>
         </div>
       </div>
       <div className="flex-columns container-large">
         <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
-            The goal of this project was to develop a website using the java
-            servlet. The site has to read the data from a MySQL database and
-            show them on various pages. Moreover, it has to provide a management
-            interface for the staff through a login managed with the user on the
-            database. On the homepage, we have to find some useful information
-            about the airport like maps and weather forecasts.
+            In order to learn React-Native I ideated this project that
+            comprehends lots of the basis of
           </p>
         </div>
       </div>
@@ -106,12 +107,14 @@ function ColorScreentest({ color }) {
       </div>
       <div className="flex-columns container-large">
         <div className="project-description">
-          <h1 className="width100 sub-section-title">The pages</h1>
+          <h1 className="width100 sub-section-title">The App</h1>
           <p className="width100 paragraph-justify">
-            The website is based on 3 main pages which are the departures and
-            arrival page, the search flights page, and the management panel. The
-            user can go through those pages with a handy menu positioned at the
-            top of the page.
+            The app with a tap on the display show an overlay composed by two
+            menu with which the user can change the background color by
+            selecting some preset or just by create che color of the background
+            by their own through 3 slider that control the 3 rgb parameter (red,
+            green, blue). While the overlay is open you can tap outside of the
+            menu for hide until you tap again.
           </p>
         </div>
         <div className="project-row">
@@ -124,10 +127,11 @@ function ColorScreentest({ color }) {
           />
 
           <p className="width50 paragraph-justify">
-            The departures and the arrival pages are two pages very similar,
-            which show the flights arriving and departing reading the data from
-            the database. They display those data in a comfy table highlighting
-            the row where are you on with the mouse.
+            The first menu that we find in the modal is composed by three slider
+            related to the three parameters of RGB, Red, Green and Blue. With
+            those slider we can change the individual values of the color of the
+            background. To the right of the sliders we find a text label that
+            show the current value of the corresponding color
           </p>
         </div>
         <div className="project-row">
@@ -139,10 +143,11 @@ function ColorScreentest({ color }) {
             alt="Second Menu screenshot"
           />
           <p className="width50 paragraph-justify">
-            The search flights page is a page in which the user can select
-            clicking the top left button an airport and see all the flights to
-            and from that destination. Otherwise, on the top right part of the
-            page, the user can search a flight via flight code or air
+            The menu that we find to the right of the modal is composed by 24
+            color present that let you change rapidly and easily the background
+            color. Selecting a preset color will also modify the values of the
+            slider on the other menu allowing you to make slight changes of the
+            color selected.
           </p>
         </div>
       </div>

@@ -264,6 +264,9 @@
   .project-title {
     font-size: 4rem !important;
   }
+  .project-first-image {
+    padding: 5rem 0 !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
