@@ -17,7 +17,7 @@ function Flynet({ color }) {
       <div className="project-home container-large">
         <h2 className="home-subtitle project-subtitle">Flynet</h2>
         <h1 className="project-title">
-          Cagliari airport website, flights info and manage panel
+          Cagliari airport website: flights' info and administration page
         </h1>
         <div
           onClick={() => {
@@ -58,12 +58,12 @@ function Flynet({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
-            The goal of this project was to develop a website using the java
-            servlet. The site has to read the data from a MySQL database and
-            show them on various pages. Moreover, it has to provide a management
-            interface for the staff through a login managed with the user on the
-            database. On the homepage, we have to find some useful information
-            about the airport like maps and weather forecasts.
+            The site reads the flight's data from a MySQL database and displays
+            the relevant information on different pages. Moreover, it has to
+            provide an administrative page, accessible by the airport's staff
+            via login, for them to manage the flight database. The homepage will
+            display useful information for the customer, like maps and
+            Cagliari's weather forecast.
           </p>
         </div>
       </div>
@@ -102,10 +102,10 @@ function Flynet({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The pages</h1>
           <p className="width100 paragraph-justify">
-            The website is based on 3 main pages which are the departures and
-            arrival page, the search flights page, and the management panel. The
-            user can go through those pages with a handy menu positioned at the
-            top of the page.
+            The website is based on three main pages: the airport flight arrival
+            and departures pages, the flight search page, and the administrative
+            page for the airport's staff. The user can navigate through these
+            pages with a practical menu positioned at the top.
           </p>
         </div>
         <div className="project-row">
@@ -123,10 +123,10 @@ function Flynet({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            The departures and the arrival pages are two pages very similar,
-            which show the flights arriving and departing reading the data from
-            the database. They display those data in a comfy table highlighting
-            the row where are you on with the mouse.
+            The airport flight arrival and departures pages are very similar.
+            They show the flights arriving and departing time by reading the
+            relevant data from the database. The data are displayed in a
+            user-friendly table that highlights the row where the cursor is.
           </p>
         </div>
         <div className="project-row">
@@ -137,10 +137,11 @@ function Flynet({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            The search flights page is a page in which the user can select
-            clicking the top left button an airport and see all the flights to
-            and from that destination. Otherwise, on the top right part of the
-            page, the user can search a flight via flight code or air
+            On the flight search page, the user can view all flights from and to
+            a selected destination by clicking on the button at the top left of
+            the screen. Meanwhile, the section on the top right of the page
+            allows the user to search flights through a flight code or airport
+            code.
           </p>
         </div>
         <div className="project-row">
@@ -151,11 +152,11 @@ function Flynet({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            The management panel is a page reserved for the staff only, which
-            permits after logging with a valid account to edit the data stored
-            in the database. With the help of multiple forms the staff can
-            perform the following action: add a new flight, add a new flight
-            company, edit an existing flight and delete an existing flight.
+            The administrative page is reserved for the staff only. It requires
+            logging in with a valid account to edit the data stored in the
+            database. Through multiple forms, the airport's staff can add a new
+            flight, add a new flight company, edit an existing flight, delete an
+            existing flight.
           </p>
         </div>
       </div>

@@ -27,7 +27,11 @@ function Footer() {
               contact@emanuelezini.com
             </a>
           </p>
-          <p className="footer-copyright">2021 Created By Emanuele Zini</p>
+          <p className="footer-copyright">
+            2021 Created By Emanuele Zini
+            <br />
+            Content Writer Assistant: Martina Zini
+          </p>
         </div>
         <div className="footer-columns">
           <h1 className="footer-title">Projects</h1>

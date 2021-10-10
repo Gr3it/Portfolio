@@ -107,6 +107,7 @@
 }
 
 .project-row-image {
+  min-width: 0;
   padding: 3.5rem;
   width: 100%;
 }
