@@ -21,9 +21,14 @@ function ResumeButton() {
           fill="#fff"
         />
       </svg>
-      <h1 className="buttons-text" style={{ textDecoration: "underline" }}>
+      <a
+        href="/Zini_Emanuele_English.pdf"
+        download="Emanuele Zini CV"
+        className="buttons-text"
+        style={{ textDecoration: "underline" }}
+      >
         Resume
-      </h1>
+      </a>
     </a>
   );
 }

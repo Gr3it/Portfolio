@@ -326,12 +326,11 @@ function Homepage() {
         </div>
         <div className="project-container">
           <ProjectCard
-            title="Cooming Soon"
-            tags="HTML, CSS, Javascript, React Native"
+            title="Color Screentest"
+            tags="HTML, CSS, Javascript, React&#x2011;Native"
             date="August 2021"
-            url=""
+            url="color-screentest"
             img="RGBColorPreview.png"
-            disable
           />
           <ProjectCard
             title="Hotel Meano"
@@ -381,15 +380,15 @@ function Homepage() {
           />
           <ExperimentBubble
             dimension="28.125rem"
-            title="Cooming Soon"
-            link="https://github.com/Gr3it/Building_plant"
-            img="3Dbuilding.png"
+            title="Loading Animation"
+            link="https://github.com/Gr3it/learning-loading-animation"
+            img="LoadingAnimation.png"
           />
           <ExperimentBubble
             dimension="25rem"
-            title="Cooming Soon"
-            link="https://github.com/Gr3it/Building_plant"
-            img="3Dbuilding.png"
+            title="Gradient color text"
+            link="https://github.com/Gr3it/learning-gradient-text"
+            img="GradientColorText.png"
           />
         </div>
       </section>
@@ -421,18 +420,18 @@ function Homepage() {
             <div className="about-text">
               <h1 className="sub-section-title">Who I Am</h1>
               <p className="paragraph">
-                I am a student based in Trento, Italy. I love programming and
-                I'm currently attending the University of Trento, IT study path.
-                Meanwhile I'm expanding my knowledge of web development and
-                UI/UX design by my own.
+                I am a bachelor's student based in Trento, Italy. While
+                following an IT study formation, I am also a passionate
+                autodidact in Web Development and UI/UX design. I have long been
+                interested in the field of computer science, for instance by
+                participating in a robotics competition.
                 <br />
                 <br />
                 <br />
-                My other interest are everything related to crypto currency,
-                marketing and advertising, personal finance and investment, pc
-                hardware. In my free time I also used to read books and sometime
-                I like to take a break with a match with some friend in video
-                games.
+                Furthermore, I am passionate about marketing and advertising,
+                personal finance and investment, pc hardware, and
+                cryptocurrency. In my free time, I enjoy reading books and
+                sometimes playing video games with friends.
               </p>
             </div>
 
@@ -641,24 +640,23 @@ function Homepage() {
           <div className="about-passion-container">
             <PassionCard
               title="Design"
-              text="In recent years I have begun to become more and more interested in the world of design. I learned how to use photoshop and illustrator and followed course on logo and illustration creation and UI & UX Design."
-              svg="Design.svg"
-              width="12rem"
-              height="12rem"
+              text="In recent years I became more and more interested in the world of design. I learned how to use Photoshop and Illustrator while applying the skills learned in projects and the creation of this website. I additionally followed courses in logo and illustration creation and UI & UX Design."
+              svg="Design.png"
             />
             <PassionCard
               title="Coding"
-              text=""
-              svg="Coding.svg"
-              width="9rem"
-              height="12rem"
+              text="I am passionate about learning new programming languages, how they work, their diversity and strengths. My interest expanded to gaining basic knowledge in Machine Learning and Data Science."
+              svg="Coding.png"
             />
             <PassionCard
               title="Gaming"
-              text=""
-              svg="Gaming.svg"
-              width="15rem"
-              height="7.6rem"
+              text="In my free time, I enjoy playing collaborative computer games. In particular, playing puzzles which require the coordination and mutual effort of six players to reach the goal. I have been often involved in the creation of strategies and management of the rest of my team."
+              svg="Gaming.png"
+            />
+            <PassionCard
+              title="Crypto"
+              text="Through getting interested in the world of cryptocurrency, I studied the characteristics of Defi and Cefi and, more specifically, the functioning of the smart contracts and the various chains characteristic. With the expertise gained, I created a portfolio to manage my investments."
+              svg="Crypto.png"
             />
           </div>
         </div>

@@ -13,7 +13,7 @@
   border-radius: 1.25rem;
   overflow: hidden;
   display: flex;
-  box-shadow: 0 0 15px -5px var(--BlackShadow);
+  box-shadow: 0 0 1rem -0.3rem var(--BlackShadow);
 }
 
 .card-info {

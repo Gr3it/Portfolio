@@ -27,12 +27,16 @@ function Footer() {
               contact@emanuelezini.com
             </a>
           </p>
-          <p className="footer-copyright">2021 Created By Emanuele Zini</p>
+          <p className="footer-copyright">
+            2021 Created By Emanuele Zini
+            <br />
+            Content Writer Assistant: Martina Zini
+          </p>
         </div>
         <div className="footer-columns">
           <h1 className="footer-title">Projects</h1>
-          <Link to={"/"} className="footer-link">
-            Cooming Soon
+          <Link to={"/color-screentest"} className="footer-link">
+            Color Screentest
           </Link>
           <Link to={"/hotel-meano"} className="footer-link">
             Hotel Meano
@@ -52,25 +56,29 @@ function Footer() {
             3D Building plan
           </a>
           <a
-            href="/"
+            href="https://github.com/Gr3it/learning-loading-animation"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
           >
-            PlaceHolder
+            Loading Animation
           </a>
           <a
-            href="/"
+            href="https://github.com/Gr3it/learning-gradient-text"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
           >
-            PlaceHolder
+            Gradient color text
           </a>
         </div>
         <div className="footer-columns">
           <h1 className="footer-title">About Me</h1>
-          <a href="/" className="footer-link">
+          <a
+            href="/Zini_Emanuele_English.pdf"
+            download="Emanuele Zini CV"
+            className="footer-link"
+          >
             Resume
           </a>
           <a
