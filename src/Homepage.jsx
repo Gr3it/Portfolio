@@ -421,10 +421,10 @@ function Homepage() {
               <h1 className="sub-section-title">Who I Am</h1>
               <p className="paragraph">
                 I am a bachelor's student based in Trento, Italy. While
-                following an IT study formation, I am also a passionate
-                autodidact in Web Development and UI/UX design. I have long been
-                interested in the field of computer science, for instance by
-                participating in a robotics competition.
+                following an IT study formation, I am also a passionate in Web
+                Development and UI/UX design. I have long been interested in the
+                field of computer science, for instance by participating in a
+                robotics competition.
                 <br />
                 <br />
                 <br />
@@ -634,7 +634,7 @@ function Homepage() {
             <h6 className="watermark-text watermark passion-watermark">
               CREATIVE
             </h6>
-            <h1 className="sub-section-title">Passion</h1>
+            <h1 className="sub-section-title">Interests</h1>
           </div>
 
           <div className="about-passion-container">
