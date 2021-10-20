@@ -158,12 +158,14 @@
 
 .passion-img {
   height: 16rem;
+  width: 16rem;
   display: flex;
   color: var(--Secondary);
 }
 
 .passion-img > * {
   height: 100%;
+  width: 100%;
   padding: 1rem;
   margin: auto;
   color: var(--Secondary);
