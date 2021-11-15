@@ -35,6 +35,9 @@ function Footer() {
         </div>
         <div className="footer-columns">
           <h1 className="footer-title">Projects</h1>
+          <Link to={"/crypto-price-tracker"} className="footer-link">
+            Crypto Price Tracker
+          </Link>
           <Link to={"/color-screentest"} className="footer-link">
             Color Screentest
           </Link>

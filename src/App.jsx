@@ -13,6 +13,9 @@ const Page_Not_Found = React.lazy(() => import("./Page_Not_Found"));
 const Flynet = React.lazy(() => import("./Project/Flynet"));
 const HotelMeano = React.lazy(() => import("./Project/HotelMeano"));
 const ColorScreentest = React.lazy(() => import("./Project/ColorScreentest"));
+const CryptoPriceTracker = React.lazy(() =>
+  import("./Project/CryptoPriceTracker")
+);
 
 function App() {
   let vh = window.innerHeight * 0.01;
@@ -34,6 +37,11 @@ function App() {
             path="/hotel-meano"
             exact
             render={() => <HotelMeano color="#fd871f" />}
+          />
+          <Route
+            path="/crypto-price-tracker"
+            exact
+            render={() => <CryptoPriceTracker color="#a9febc" />}
           />
           <Route
             path="/flynet"

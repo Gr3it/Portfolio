@@ -326,6 +326,13 @@ function Homepage() {
         </div>
         <div className="project-container">
           <ProjectCard
+            title="Crypto Price Tracker"
+            tags="HTML, CSS, Javascript, React"
+            date="November 2021"
+            url="crypto-price-tracker"
+            img="RGBColorPreview.png"
+          />
+          <ProjectCard
             title="Color Screentest"
             tags="HTML, CSS, Javascript, React&#x2011;Native"
             date="August 2021"
