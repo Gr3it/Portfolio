@@ -60,12 +60,12 @@ function CryptoPriceTracker({ color }) {
         <div className="project-description">
           <h1 className="width100 sub-section-title">The challenge</h1>
           <p className="width100 paragraph-justify">
-            As I wanted to try and learn how to use a chart library and to call
-            APIs, I decided to develop this website. A price tracker was the
-            best fit for put in practice my knowledge about plotting charts and
-            using APIs on the same website. This project wants to be a simple
-            site including a menu that lets the user change some settings like
-            as: currency and the color theme.{" "}
+            I decided to develop this website with the aim to learn how to use a
+            chart library and to call APIs. A price tracker was the best fit for
+            putting in practice my knowledge on plotting charts and using APIs
+            together on one single website. This project wants to be a simple.
+            It includes a menu through which the user can change some settings,
+            like: currency and the color theme.
           </p>
         </div>
       </div>
@@ -132,8 +132,8 @@ function CryptoPriceTracker({ color }) {
           <p className="width50 paragraph-justify">
             The homepage loads the data in a dynamic mode in groups of one
             hundred. When the end of the current data is reached the subsequent
-            data will be loaded. This page also includes a search bar that lets
-            the users search the crypto by the name.{" "}
+            data will be loaded. This page also includes a search bar that
+            allows the users to search the crypto by name.{" "}
           </p>
         </div>
         <div className="project-row">
@@ -147,12 +147,13 @@ function CryptoPriceTracker({ color }) {
             />
           </div>
           <p className="width50 paragraph-justify">
-            When a cryptocurrency were clicked a dedicated page will open, this
+            When a cryptocurrency is clicked a dedicated page will open. This
             page will include all the information about the currency, a simple
             bidirectional converter, and the price chart. The scope of the price
-            chart can be switched between 30 days, for a smaller time frame
-            plotting, and max, for getting all the data since the creation of
-            that cryptocurrency.
+            chart can be switched between <i>30 days</i> and <i>max</i>. While
+            the first provides thanks to the smaller time frame plotting, more
+            details and precision; the second presents all the data since the
+            creation of the selected cryptocurrency.
           </p>
         </div>
       </div>
