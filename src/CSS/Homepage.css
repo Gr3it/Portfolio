@@ -143,7 +143,7 @@
   display: grid;
   flex-direction: row;
   gap: 7.5rem;
-  grid-template-areas: "Design Coding Gaming Crypto";
+  grid-template-areas: "Crypto Coding Design Gaming";
   grid-template-columns: repeat(4, 1fr);
 }
 

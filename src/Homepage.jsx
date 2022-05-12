@@ -80,7 +80,9 @@ function Homepage() {
       <section className="home container-large" id="home">
         <h6 className="watermark-text watermark home-watermark">PARTNER</h6>
         <div className="home-left-column">
-          <h2 className="home-subtitle">Web Developer & UI/UX Designer</h2>
+          <h2 className="home-subtitle">
+            Smart Contract Engineer & Web Developer
+          </h2>
           <h1 className="home-title">
             Emanuele <br />
             Zini
@@ -428,10 +430,10 @@ function Homepage() {
               <h1 className="sub-section-title">Who I Am</h1>
               <p className="paragraph">
                 I am a bachelor's student based in Trento, Italy. While
-                following an IT study formation, I am also a passionate in Web
-                Development and UI/UX design. I have long been interested in the
-                field of computer science, for instance by participating in a
-                robotics competition.
+                following an IT study formation, I am also a passionate in
+                Blockchain Development, Web Development and UI/UX design. I have
+                long been interested in the field of computer science, for
+                instance by participating in a robotics competition.
                 <br />
                 <br />
                 <br />
@@ -646,9 +648,9 @@ function Homepage() {
 
           <div className="about-passion-container">
             <PassionCard
-              title="Design"
-              text="In recent years I became more and more interested in the world of design. I learned how to use Photoshop and Illustrator while applying the skills learned in projects and the creation of this website. I additionally followed courses in logo and illustration creation and UI & UX Design."
-              svg="Design.png"
+              title="Crypto"
+              text="In recent times I got more and more interested in cryptocurrency. I studied the characteristics of Defi and Cefi and, more specifically, the functioning and code behind smart contracts. With the expertise gained, I developed Web Applications that interact with Blockchains."
+              svg="Crypto.png"
             />
             <PassionCard
               title="Coding"
@@ -656,14 +658,15 @@ function Homepage() {
               svg="Coding.png"
             />
             <PassionCard
+              title="Design"
+              text="In recent years I became more and more interested in the world of design. I learned how to use Photoshop and Illustrator while applying the skills learned in projects and the creation of this website. I additionally followed courses in logo and illustration creation and UI & UX Design."
+              svg="Design.png"
+            />
+
+            <PassionCard
               title="Gaming"
               text="In my free time, I enjoy playing collaborative computer games. In particular, playing puzzles which require the coordination and mutual effort of six players to reach the goal. I have been often involved in the creation of strategies and management of the rest of my team."
               svg="Gaming.png"
-            />
-            <PassionCard
-              title="Crypto"
-              text="Through getting interested in the world of cryptocurrency, I studied the characteristics of Defi and Cefi and, more specifically, the functioning of the smart contracts and the various chains characteristic. With the expertise gained, I created a portfolio to manage my investments."
-              svg="Crypto.png"
             />
           </div>
         </div>

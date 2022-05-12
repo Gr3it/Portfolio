@@ -93,6 +93,14 @@ function Footer() {
             GitHub
           </a>
           <a
+            href="https://buidlguidl.com/builders/0x2F79c1ae4d60Bb2DfF0389782359E3676712e6E3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            Build Guild
+          </a>
+          <a
             href="https://www.sololearn.com/profile/19666283"
             target="_blank"
             rel="noopener noreferrer"
@@ -107,14 +115,6 @@ function Footer() {
             className="footer-link"
           >
             CSS-Battle
-          </a>
-          <a
-            href="https://www.twitch.tv/gr3it"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-link"
-          >
-            Twitch
           </a>
         </div>
       </div>
