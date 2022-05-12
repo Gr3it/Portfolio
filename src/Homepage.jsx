@@ -330,7 +330,7 @@ function Homepage() {
             tags="HTML, CSS, Javascript, React"
             date="November 2021"
             url="crypto-price-tracker"
-            img="RGBColorPreview.png"
+            img="CryptoPriceTrackerPreview.png"
           />
           <ProjectCard
             title="Color Screentest"
