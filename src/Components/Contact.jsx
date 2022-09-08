@@ -35,8 +35,8 @@ function Contact({ open = false, handleModalClose }) {
       e.target,
       process.env.REACT_APP_EMAILJS_ID
     );
-    setCaptcha(false);
-    reCaptcha.current.reset();
+    //setCaptcha(false);
+    //reCaptcha.current.reset();
     e.target.reset();
   }
 
