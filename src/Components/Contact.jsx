@@ -43,7 +43,8 @@ function Contact({ open = false, handleModalClose }) {
   const handleSubmit = (e) => {
     e.stopPropagation();
     e.preventDefault();
-    if (captcha) {
+    if (true) {
+      //sobstitute with captcha when lib get fixed
       sendEmail(e);
     } else {
       document
@@ -96,6 +97,7 @@ function Contact({ open = false, handleModalClose }) {
                 required
               />
             </div>
+
             <div className="contact-field">
               <h2 className="contact-text">Email:</h2>
               <input
@@ -114,6 +116,7 @@ function Contact({ open = false, handleModalClose }) {
                 required
               />
             </div>
+
             <div className="contact-field">
               <h2 className="contact-text">Message:</h2>
               <textarea
@@ -124,13 +127,17 @@ function Contact({ open = false, handleModalClose }) {
                 required
               />
             </div>
+
             <div id="contact-captcha" className="contact-captcha">
-              <ReCAPTCHA
+              {/*<ReCAPTCHA currently not working because of lib problems
                 ref={reCaptcha}
                 sitekey={process.env.REACT_APP_SITE_KEY}
-                onChange={() => setCaptcha(true)}
-                onExpired={() => setCaptcha(false)}
-              />
+                onChange={() => {
+                  console.log("success");
+                }}
+                //onChange={() => setCaptcha(true)}
+                //onExpired={() => setCaptcha(false)}
+              />*/}
             </div>
             <input
               type="submit"

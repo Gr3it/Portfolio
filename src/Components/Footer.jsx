@@ -23,8 +23,11 @@ function Footer() {
           </a>
           <p className="footer-email">
             Email: <br />
-            <a href="mailto:contact@emanuelezini.com" className="footer-link">
-              contact@emanuelezini.com
+            <a
+              href="mailto:emanuele.zini11+work@gmail.com"
+              className="footer-link"
+            >
+              emanuele.zini11+work@gmail.com
             </a>
           </p>
           <p className="footer-copyright">
